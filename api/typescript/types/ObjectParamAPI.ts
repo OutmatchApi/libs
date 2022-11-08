@@ -29,6 +29,12 @@ export interface ApiAppApiCreateApiAppRequest {
 
 export interface ApiAppApiCreateApiAppReleaseRequest {
     /**
+     * app id to associate the release with
+     * @type string
+     * @memberof ApiAppApicreateApiAppRelease
+     */
+    appId: string
+    /**
      * Created release object
      * @type ReleaseRequest
      * @memberof ApiAppApicreateApiAppRelease
@@ -37,6 +43,18 @@ export interface ApiAppApiCreateApiAppReleaseRequest {
 }
 
 export interface ApiAppApiCreateApiAppReleaseSdksRequest {
+    /**
+     * app id
+     * @type string
+     * @memberof ApiAppApicreateApiAppReleaseSdks
+     */
+    appId: string
+    /**
+     * release id
+     * @type string
+     * @memberof ApiAppApicreateApiAppReleaseSdks
+     */
+    releaseId: string
     /**
      * Created sdks objects
      * @type SdkRequest
@@ -66,8 +84,8 @@ export class ObjectApiAppApi {
      * Create api app release
      * @param param the request object
      */
-    public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest = {}, options?: Configuration): Promise<void> {
-        return this.api.createApiAppRelease(param.releaseRequest,  options).toPromise();
+    public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest, options?: Configuration): Promise<void> {
+        return this.api.createApiAppRelease(param.appId, param.releaseRequest,  options).toPromise();
     }
 
     /**
@@ -75,8 +93,8 @@ export class ObjectApiAppApi {
      * Generate sdks for a relase
      * @param param the request object
      */
-    public createApiAppReleaseSdks(param: ApiAppApiCreateApiAppReleaseSdksRequest = {}, options?: Configuration): Promise<void> {
-        return this.api.createApiAppReleaseSdks(param.sdkRequest,  options).toPromise();
+    public createApiAppReleaseSdks(param: ApiAppApiCreateApiAppReleaseSdksRequest, options?: Configuration): Promise<void> {
+        return this.api.createApiAppReleaseSdks(param.appId, param.releaseId, param.sdkRequest,  options).toPromise();
     }
 
 }
@@ -95,11 +113,11 @@ export interface UserApiCreateUserRequest {
 
 export interface UserApiUpdateUserRequest {
     /**
-     * name that need to be deleted
+     * user id to update
      * @type string
      * @memberof UserApiupdateUser
      */
-    username: string
+    userId: string
     /**
      * Update an existent user in the store
      * @type UserPutRequest
@@ -130,7 +148,7 @@ export class ObjectUserApi {
      * @param param the request object
      */
     public updateUser(param: UserApiUpdateUserRequest, options?: Configuration): Promise<void> {
-        return this.api.updateUser(param.username, param.userPutRequest,  options).toPromise();
+        return this.api.updateUser(param.userId, param.userPutRequest,  options).toPromise();
     }
 
 }

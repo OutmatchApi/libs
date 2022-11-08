@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost:8000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createUser**](UserApi.md#createUser) | **POST** /user | Create user
-[**updateUser**](UserApi.md#updateUser) | **PUT** /user/{id} | Update user
+[**updateUser**](UserApi.md#updateUser) | **PUT** /user/{user_id} | Update user
 
 
 # **createUser**
@@ -83,8 +83,8 @@ const configuration = .createConfiguration();
 const apiInstance = new .UserApi(configuration);
 
 let body:.UserApiUpdateUserRequest = {
-  // string | name that need to be deleted
-  username: "username_example",
+  // string | user id to update
+  userId: "user_id_example",
   // UserPutRequest | Update an existent user in the store (optional)
   userPutRequest: {
     firstName: "John",
@@ -104,7 +104,7 @@ apiInstance.updateUser(body).then((data:any) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userPutRequest** | **UserPutRequest**| Update an existent user in the store |
- **username** | [**string**] | name that need to be deleted | defaults to undefined
+ **userId** | [**string**] | user id to update | defaults to undefined
 
 
 ### Return type

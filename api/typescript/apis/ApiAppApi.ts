@@ -60,14 +60,22 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * Create an api app release
      * Create api app release
+     * @param appId app id to associate the release with
      * @param releaseRequest Created release object
      */
-    public async createApiAppRelease(releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppRelease(appId: string, releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
+
+        // verify required parameter 'appId' is not null or undefined
+        if (appId === null || appId === undefined) {
+            throw new RequiredError("ApiAppApi", "createApiAppRelease", "appId");
+        }
+
 
 
         // Path Params
-        const localVarPath = '/apiApp/{id}/release';
+        const localVarPath = '/apiApp/{app_id}/release'
+            .replace('{' + 'app_id' + '}', encodeURIComponent(String(appId)));
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);
@@ -97,14 +105,30 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * Generate sdks for a relase
      * Generate sdks for a relase
+     * @param appId app id
+     * @param releaseId release id
      * @param sdkRequest Created sdks objects
      */
-    public async createApiAppReleaseSdks(sdkRequest?: SdkRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
+
+        // verify required parameter 'appId' is not null or undefined
+        if (appId === null || appId === undefined) {
+            throw new RequiredError("ApiAppApi", "createApiAppReleaseSdks", "appId");
+        }
+
+
+        // verify required parameter 'releaseId' is not null or undefined
+        if (releaseId === null || releaseId === undefined) {
+            throw new RequiredError("ApiAppApi", "createApiAppReleaseSdks", "releaseId");
+        }
+
 
 
         // Path Params
-        const localVarPath = '/apiApp/{id}/release/{id}/sdk';
+        const localVarPath = '/apiApp/{app_id}/release/{release_id}/sdk'
+            .replace('{' + 'app_id' + '}', encodeURIComponent(String(appId)))
+            .replace('{' + 'release_id' + '}', encodeURIComponent(String(releaseId)));
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);

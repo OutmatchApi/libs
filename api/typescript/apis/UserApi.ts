@@ -57,22 +57,22 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param username name that need to be deleted
+     * @param userId user id to update
      * @param userPutRequest Update an existent user in the store
      */
-    public async updateUser(username: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<RequestContext> {
+    public async updateUser(userId: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
-        // verify required parameter 'username' is not null or undefined
-        if (username === null || username === undefined) {
-            throw new RequiredError("UserApi", "updateUser", "username");
+        // verify required parameter 'userId' is not null or undefined
+        if (userId === null || userId === undefined) {
+            throw new RequiredError("UserApi", "updateUser", "userId");
         }
 
 
 
         // Path Params
-        const localVarPath = '/user/{id}'
-            .replace('{' + 'username' + '}', encodeURIComponent(String(username)));
+        const localVarPath = '/user/{user_id}'
+            .replace('{' + 'user_id' + '}', encodeURIComponent(String(userId)));
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.PUT);

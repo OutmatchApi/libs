@@ -41,20 +41,23 @@ export class PromiseApiAppApi {
     /**
      * Create an api app release
      * Create api app release
+     * @param appId app id to associate the release with
      * @param releaseRequest Created release object
      */
-    public createApiAppRelease(releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.createApiAppRelease(releaseRequest, _options);
+    public createApiAppRelease(appId: string, releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.createApiAppRelease(appId, releaseRequest, _options);
         return result.toPromise();
     }
 
     /**
      * Generate sdks for a relase
      * Generate sdks for a relase
+     * @param appId app id
+     * @param releaseId release id
      * @param sdkRequest Created sdks objects
      */
-    public createApiAppReleaseSdks(sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.createApiAppReleaseSdks(sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.createApiAppReleaseSdks(appId, releaseId, sdkRequest, _options);
         return result.toPromise();
     }
 
@@ -90,11 +93,11 @@ export class PromiseUserApi {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param username name that need to be deleted
+     * @param userId user id to update
      * @param userPutRequest Update an existent user in the store
      */
-    public updateUser(username: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.updateUser(username, userPutRequest, _options);
+    public updateUser(userId: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.updateUser(userId, userPutRequest, _options);
         return result.toPromise();
     }
 

@@ -59,10 +59,11 @@ export class ObservableApiAppApi {
     /**
      * Create an api app release
      * Create api app release
+     * @param appId app id to associate the release with
      * @param releaseRequest Created release object
      */
-    public createApiAppRelease(releaseRequest?: ReleaseRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.createApiAppRelease(releaseRequest, _options);
+    public createApiAppRelease(appId: string, releaseRequest?: ReleaseRequest, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.createApiAppRelease(appId, releaseRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -83,10 +84,12 @@ export class ObservableApiAppApi {
     /**
      * Generate sdks for a relase
      * Generate sdks for a relase
+     * @param appId app id
+     * @param releaseId release id
      * @param sdkRequest Created sdks objects
      */
-    public createApiAppReleaseSdks(sdkRequest?: SdkRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(appId, releaseId, sdkRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -149,11 +152,11 @@ export class ObservableUserApi {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param username name that need to be deleted
+     * @param userId user id to update
      * @param userPutRequest Update an existent user in the store
      */
-    public updateUser(username: string, userPutRequest?: UserPutRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.updateUser(username, userPutRequest, _options);
+    public updateUser(userId: string, userPutRequest?: UserPutRequest, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.updateUser(userId, userPutRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
