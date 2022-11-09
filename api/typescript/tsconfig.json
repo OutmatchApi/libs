@@ -2,7 +2,6 @@
     "compilerOptions": {
         "strict": true,
         "target": "es6",
-        "esModuleInterop": true,
         "moduleResolution": "node",
         "declaration": true,
         "noUnusedLocals": false,
@@ -16,7 +15,9 @@
         "lib": [
             "es6",
             "dom"
-        ]
+        ],
+        "module": "CommonJS",
+        "allowJs": true
     },
     "exclude": [
         "dist",
@@ -24,7 +25,5 @@
     ],
     "filesGlob": [
         "./**/*.ts"
-    ],
-    "module": "CommonJS",
-    "allowJs": true
+    ]
 }
