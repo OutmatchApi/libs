@@ -110,19 +110,26 @@ export class UserApiResponseProcessor {
      * @params response Response returned by the server for a request to createUser
      * @throws ApiException if the response code was not in [200, 299]
      */
-     public async createUser(response: ResponseContext): Promise< void> {
+     public async createUser(response: ResponseContext): Promise<User > {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
-        if (isCodeInRange("0", response.httpStatusCode)) {
+        if (isCodeInRange("201", response.httpStatusCode)) {
             const body: User = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
                 "User", ""
             ) as User;
-            throw new ApiException<User>(response.httpStatusCode, "successful operation", body, response.headers);
+            return body;
+        }
+        if (isCodeInRange("409", response.httpStatusCode)) {
+            throw new ApiException<undefined>(response.httpStatusCode, "user already exist", undefined, response.headers);
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml
         if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
-            return;
+            const body: User = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "User", ""
+            ) as User;
+            return body;
         }
 
         throw new ApiException<string | Blob | undefined>(response.httpStatusCode, "Unknown API Status Code!", await response.getBodyAsAny(), response.headers);

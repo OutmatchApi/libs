@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **createUser**
-> createUser()
+> User createUser()
 
 This can only be done by the logged in user.
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**User**
 
 ### Authorization
 
@@ -63,7 +63,8 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**0** | successful operation |  -  |
+**201** | user created |  -  |
+**409** | user already exist |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

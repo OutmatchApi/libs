@@ -130,7 +130,7 @@ export class ObservableUserApi {
      * Create user
      * @param userPostRequest Created user object
      */
-    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Observable<void> {
+    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Observable<User> {
         const requestContextPromise = this.requestFactory.createUser(userPostRequest, _options);
 
         // build promise chain

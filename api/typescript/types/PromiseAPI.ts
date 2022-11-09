@@ -85,7 +85,7 @@ export class PromiseUserApi {
      * Create user
      * @param userPostRequest Created user object
      */
-    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Promise<void> {
+    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Promise<User> {
         const result = this.api.createUser(userPostRequest, _options);
         return result.toPromise();
     }

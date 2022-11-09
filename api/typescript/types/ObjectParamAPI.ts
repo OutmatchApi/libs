@@ -138,7 +138,7 @@ export class ObjectUserApi {
      * Create user
      * @param param the request object
      */
-    public createUser(param: UserApiCreateUserRequest = {}, options?: Configuration): Promise<void> {
+    public createUser(param: UserApiCreateUserRequest = {}, options?: Configuration): Promise<User> {
         return this.api.createUser(param.userPostRequest,  options).toPromise();
     }
 
