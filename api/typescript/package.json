@@ -10,8 +10,7 @@
     ],
     "license": "MIT",
     "main": "./dist/index.js",
-    "type": "module",
-    "module": "./dist/index.js",
+    "type": "commonjs",
     "typings": "./dist/index.d.ts",
     "scripts": {
         "build": "tsc",
