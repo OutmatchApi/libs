@@ -23,7 +23,7 @@
         "node_modules"
     ],
     "filesGlob": [
-        "./src/**/*.ts"
+        "./**/*.ts"
     ],
     "module": "CommonJS",
     "allowJs": true
