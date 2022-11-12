@@ -1,4 +1,4 @@
-## @gener-api-test/milo@0.0.12
+## @gener-api-test/milo@0.0.13
 
 This generator creates TypeScript/JavaScript client that utilizes fetch-api.
 
@@ -21,7 +21,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @gener-api-test/milo@0.0.12 --save
+npm install @gener-api-test/milo@0.0.13 --save
 ```
 
 _unPublished (not recommended):_
