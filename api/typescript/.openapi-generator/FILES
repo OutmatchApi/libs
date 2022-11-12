@@ -18,6 +18,7 @@ models/ApiApp.ts
 models/ApiAppRequest.ts
 models/Language.ts
 models/Logo.ts
+models/ModelError.ts
 models/ObjectSerializer.ts
 models/Release.ts
 models/ReleaseRequest.ts

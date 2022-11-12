@@ -5,6 +5,7 @@ import { ApiApp } from '../models/ApiApp';
 import { ApiAppRequest } from '../models/ApiAppRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
+import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { ReleaseRequest } from '../models/ReleaseRequest';
 import { Sdk } from '../models/Sdk';
@@ -93,11 +94,10 @@ export class PromiseUserApi {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param userId user id to update
      * @param userPutRequest Update an existent user in the store
      */
-    public updateUser(userId: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.updateUser(userId, userPutRequest, _options);
+    public updateUser(userPutRequest?: UserPutRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.updateUser(userPutRequest, _options);
         return result.toPromise();
     }
 

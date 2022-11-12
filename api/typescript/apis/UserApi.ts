@@ -63,22 +63,14 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param userId user id to update
      * @param userPutRequest Update an existent user in the store
      */
-    public async updateUser(userId: string, userPutRequest?: UserPutRequest, _options?: Configuration): Promise<RequestContext> {
+    public async updateUser(userPutRequest?: UserPutRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
-
-        // verify required parameter 'userId' is not null or undefined
-        if (userId === null || userId === undefined) {
-            throw new RequiredError("UserApi", "updateUser", "userId");
-        }
-
 
 
         // Path Params
-        const localVarPath = '/user/{user_id}'
-            .replace('{' + 'user_id' + '}', encodeURIComponent(String(userId)));
+        const localVarPath = '/user';
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.PUT);
@@ -131,8 +123,12 @@ export class UserApiResponseProcessor {
             ) as User;
             return body;
         }
-        if (isCodeInRange("409", response.httpStatusCode)) {
-            throw new ApiException<undefined>(response.httpStatusCode, "user already exist", undefined, response.headers);
+        if (isCodeInRange("4XX", response.httpStatusCode)) {
+            const body: Error = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Error", ""
+            ) as Error;
+            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml

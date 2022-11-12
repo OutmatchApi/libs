@@ -5,7 +5,7 @@ All URIs are relative to *http://localhost:8000*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createUser**](UserApi.md#createUser) | **POST** /user | Create user
-[**updateUser**](UserApi.md#updateUser) | **PUT** /user/{user_id} | Update user
+[**updateUser**](UserApi.md#updateUser) | **PUT** /user | Update user
 
 
 # **createUser**
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** | user created |  -  |
-**409** | user already exist |  -  |
+**4XX** | Client Error |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -84,8 +84,6 @@ const configuration = .createConfiguration();
 const apiInstance = new .UserApi(configuration);
 
 let body:.UserApiUpdateUserRequest = {
-  // string | user id to update
-  userId: "user_id_example",
   // UserPutRequest | Update an existent user in the store (optional)
   userPutRequest: {
     firstName: "John",
@@ -105,7 +103,6 @@ apiInstance.updateUser(body).then((data:any) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **userPutRequest** | **UserPutRequest**| Update an existent user in the store |
- **userId** | [**string**] | user id to update | defaults to undefined
 
 
 ### Return type

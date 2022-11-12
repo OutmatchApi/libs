@@ -186,6 +186,13 @@ export class ApiAppApiResponseProcessor {
      */
      public async createApiApp(response: ResponseContext): Promise< void> {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
+        if (isCodeInRange("4XX", response.httpStatusCode)) {
+            const body: Error = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Error", ""
+            ) as Error;
+            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
+        }
         if (isCodeInRange("0", response.httpStatusCode)) {
             const body: ApiApp = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
@@ -211,6 +218,13 @@ export class ApiAppApiResponseProcessor {
      */
      public async createApiAppRelease(response: ResponseContext): Promise< void> {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
+        if (isCodeInRange("4XX", response.httpStatusCode)) {
+            const body: Error = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Error", ""
+            ) as Error;
+            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
+        }
         if (isCodeInRange("0", response.httpStatusCode)) {
             const body: Release = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
@@ -236,6 +250,13 @@ export class ApiAppApiResponseProcessor {
      */
      public async createApiAppReleaseSdks(response: ResponseContext): Promise< void> {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
+        if (isCodeInRange("4XX", response.httpStatusCode)) {
+            const body: Error = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Error", ""
+            ) as Error;
+            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
+        }
         if (isCodeInRange("0", response.httpStatusCode)) {
             const body: SdkResponse = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),

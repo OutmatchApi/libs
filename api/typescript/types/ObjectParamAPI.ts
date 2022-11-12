@@ -5,6 +5,7 @@ import { ApiApp } from '../models/ApiApp';
 import { ApiAppRequest } from '../models/ApiAppRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
+import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { ReleaseRequest } from '../models/ReleaseRequest';
 import { Sdk } from '../models/Sdk';
@@ -113,12 +114,6 @@ export interface UserApiCreateUserRequest {
 
 export interface UserApiUpdateUserRequest {
     /**
-     * user id to update
-     * @type string
-     * @memberof UserApiupdateUser
-     */
-    userId: string
-    /**
      * Update an existent user in the store
      * @type UserPutRequest
      * @memberof UserApiupdateUser
@@ -147,8 +142,8 @@ export class ObjectUserApi {
      * Update user
      * @param param the request object
      */
-    public updateUser(param: UserApiUpdateUserRequest, options?: Configuration): Promise<void> {
-        return this.api.updateUser(param.userId, param.userPutRequest,  options).toPromise();
+    public updateUser(param: UserApiUpdateUserRequest = {}, options?: Configuration): Promise<void> {
+        return this.api.updateUser(param.userPutRequest,  options).toPromise();
     }
 
 }
