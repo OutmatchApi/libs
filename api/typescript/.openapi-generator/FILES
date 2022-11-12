@@ -2,8 +2,10 @@
 .openapi-generator-ignore
 ApiAppApi.md
 README.md
+SpecApi.md
 UserApi.md
 apis/ApiAppApi.ts
+apis/SpecApi.ts
 apis/UserApi.ts
 apis/baseapi.ts
 apis/exception.ts

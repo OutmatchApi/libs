@@ -54,11 +54,40 @@ export class PromiseApiAppApi {
      * Generate sdks for a relase
      * Generate sdks for a relase
      * @param appId app id
-     * @param releaseId release id
+     * @param releaseVersion release id
      * @param sdkRequest Created sdks objects
      */
-    public createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.createApiAppReleaseSdks(appId, releaseId, sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.createApiAppReleaseSdks(appId, releaseVersion, sdkRequest, _options);
+        return result.toPromise();
+    }
+
+
+}
+
+
+
+import { ObservableSpecApi } from './ObservableAPI';
+
+import { SpecApiRequestFactory, SpecApiResponseProcessor} from "../apis/SpecApi";
+export class PromiseSpecApi {
+    private api: ObservableSpecApi
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: SpecApiRequestFactory,
+        responseProcessor?: SpecApiResponseProcessor
+    ) {
+        this.api = new ObservableSpecApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Download openapi spec
+     * @param appId app id
+     * @param releaseVersion release id
+     */
+    public downloadSpec(appId: string, releaseVersion: string, _options?: Configuration): Promise<void> {
+        const result = this.api.downloadSpec(appId, releaseVersion, _options);
         return result.toPromise();
     }
 

@@ -6,7 +6,7 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**createApiApp**](ApiAppApi.md#createApiApp) | **POST** /apiApp | Create api app
 [**createApiAppRelease**](ApiAppApi.md#createApiAppRelease) | **POST** /apiApp/{app_id}/release | Create api app release
-[**createApiAppReleaseSdks**](ApiAppApi.md#createApiAppReleaseSdks) | **POST** /apiApp/{app_id}/release/{release_id}/sdk | Generate sdks for a relase
+[**createApiAppReleaseSdks**](ApiAppApi.md#createApiAppReleaseSdks) | **POST** /apiApp/{app_id}/release/{release_version}/sdk | Generate sdks for a relase
 
 
 # **createApiApp**
@@ -145,7 +145,7 @@ let body:.ApiAppApiCreateApiAppReleaseSdksRequest = {
   // string | app id
   appId: "app_id_example",
   // string | release id
-  releaseId: "release_id_example",
+  releaseVersion: "1.0.0",
   // SdkRequest | Created sdks objects (optional)
   sdkRequest: {
     languages: [
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **sdkRequest** | **SdkRequest**| Created sdks objects |
  **appId** | [**string**] | app id | defaults to undefined
- **releaseId** | [**string**] | release id | defaults to undefined
+ **releaseVersion** | [**string**] | release id | defaults to undefined
 
 
 ### Return type

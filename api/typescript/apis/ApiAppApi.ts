@@ -118,10 +118,10 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
      * Generate sdks for a relase
      * Generate sdks for a relase
      * @param appId app id
-     * @param releaseId release id
+     * @param releaseVersion release id
      * @param sdkRequest Created sdks objects
      */
-    public async createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
         // verify required parameter 'appId' is not null or undefined
@@ -130,17 +130,17 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
         }
 
 
-        // verify required parameter 'releaseId' is not null or undefined
-        if (releaseId === null || releaseId === undefined) {
-            throw new RequiredError("ApiAppApi", "createApiAppReleaseSdks", "releaseId");
+        // verify required parameter 'releaseVersion' is not null or undefined
+        if (releaseVersion === null || releaseVersion === undefined) {
+            throw new RequiredError("ApiAppApi", "createApiAppReleaseSdks", "releaseVersion");
         }
 
 
 
         // Path Params
-        const localVarPath = '/apiApp/{app_id}/release/{release_id}/sdk'
+        const localVarPath = '/apiApp/{app_id}/release/{release_version}/sdk'
             .replace('{' + 'app_id' + '}', encodeURIComponent(String(appId)))
-            .replace('{' + 'release_id' + '}', encodeURIComponent(String(releaseId)));
+            .replace('{' + 'release_version' + '}', encodeURIComponent(String(releaseVersion)));
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);

@@ -86,11 +86,11 @@ export class ObservableApiAppApi {
      * Generate sdks for a relase
      * Generate sdks for a relase
      * @param appId app id
-     * @param releaseId release id
+     * @param releaseVersion release id
      * @param sdkRequest Created sdks objects
      */
-    public createApiAppReleaseSdks(appId: string, releaseId: string, sdkRequest?: SdkRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(appId, releaseId, sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(appId, releaseVersion, sdkRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -105,6 +105,48 @@ export class ObservableApiAppApi {
                     middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
                 }
                 return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.createApiAppReleaseSdks(rsp)));
+            }));
+    }
+
+}
+
+import { SpecApiRequestFactory, SpecApiResponseProcessor} from "../apis/SpecApi";
+export class ObservableSpecApi {
+    private requestFactory: SpecApiRequestFactory;
+    private responseProcessor: SpecApiResponseProcessor;
+    private configuration: Configuration;
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: SpecApiRequestFactory,
+        responseProcessor?: SpecApiResponseProcessor
+    ) {
+        this.configuration = configuration;
+        this.requestFactory = requestFactory || new SpecApiRequestFactory(configuration);
+        this.responseProcessor = responseProcessor || new SpecApiResponseProcessor();
+    }
+
+    /**
+     * Download openapi spec
+     * @param appId app id
+     * @param releaseVersion release id
+     */
+    public downloadSpec(appId: string, releaseVersion: string, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.downloadSpec(appId, releaseVersion, _options);
+
+        // build promise chain
+        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
+        for (let middleware of this.configuration.middleware) {
+            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
+        }
+
+        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
+            pipe(mergeMap((response: ResponseContext) => {
+                let middlewarePostObservable = of(response);
+                for (let middleware of this.configuration.middleware) {
+                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
+                }
+                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.downloadSpec(rsp)));
             }));
     }
 

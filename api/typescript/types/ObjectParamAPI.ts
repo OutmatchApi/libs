@@ -55,7 +55,7 @@ export interface ApiAppApiCreateApiAppReleaseSdksRequest {
      * @type string
      * @memberof ApiAppApicreateApiAppReleaseSdks
      */
-    releaseId: string
+    releaseVersion: string
     /**
      * Created sdks objects
      * @type SdkRequest
@@ -95,7 +95,42 @@ export class ObjectApiAppApi {
      * @param param the request object
      */
     public createApiAppReleaseSdks(param: ApiAppApiCreateApiAppReleaseSdksRequest, options?: Configuration): Promise<void> {
-        return this.api.createApiAppReleaseSdks(param.appId, param.releaseId, param.sdkRequest,  options).toPromise();
+        return this.api.createApiAppReleaseSdks(param.appId, param.releaseVersion, param.sdkRequest,  options).toPromise();
+    }
+
+}
+
+import { ObservableSpecApi } from "./ObservableAPI";
+import { SpecApiRequestFactory, SpecApiResponseProcessor} from "../apis/SpecApi";
+
+export interface SpecApiDownloadSpecRequest {
+    /**
+     * app id
+     * @type string
+     * @memberof SpecApidownloadSpec
+     */
+    appId: string
+    /**
+     * release id
+     * @type string
+     * @memberof SpecApidownloadSpec
+     */
+    releaseVersion: string
+}
+
+export class ObjectSpecApi {
+    private api: ObservableSpecApi
+
+    public constructor(configuration: Configuration, requestFactory?: SpecApiRequestFactory, responseProcessor?: SpecApiResponseProcessor) {
+        this.api = new ObservableSpecApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Download openapi spec
+     * @param param the request object
+     */
+    public downloadSpec(param: SpecApiDownloadSpecRequest, options?: Configuration): Promise<void> {
+        return this.api.downloadSpec(param.appId, param.releaseVersion,  options).toPromise();
     }
 
 }
