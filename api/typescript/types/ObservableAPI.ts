@@ -110,48 +110,6 @@ export class ObservableApiAppApi {
 
 }
 
-import { SpecApiRequestFactory, SpecApiResponseProcessor} from "../apis/SpecApi";
-export class ObservableSpecApi {
-    private requestFactory: SpecApiRequestFactory;
-    private responseProcessor: SpecApiResponseProcessor;
-    private configuration: Configuration;
-
-    public constructor(
-        configuration: Configuration,
-        requestFactory?: SpecApiRequestFactory,
-        responseProcessor?: SpecApiResponseProcessor
-    ) {
-        this.configuration = configuration;
-        this.requestFactory = requestFactory || new SpecApiRequestFactory(configuration);
-        this.responseProcessor = responseProcessor || new SpecApiResponseProcessor();
-    }
-
-    /**
-     * Download openapi spec
-     * @param appId app id
-     * @param releaseVersion release id
-     */
-    public downloadSpec(appId: string, releaseVersion: string, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.downloadSpec(appId, releaseVersion, _options);
-
-        // build promise chain
-        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
-        for (let middleware of this.configuration.middleware) {
-            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
-        }
-
-        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
-            pipe(mergeMap((response: ResponseContext) => {
-                let middlewarePostObservable = of(response);
-                for (let middleware of this.configuration.middleware) {
-                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
-                }
-                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.downloadSpec(rsp)));
-            }));
-    }
-
-}
-
 import { UserApiRequestFactory, UserApiResponseProcessor} from "../apis/UserApi";
 export class ObservableUserApi {
     private requestFactory: UserApiRequestFactory;

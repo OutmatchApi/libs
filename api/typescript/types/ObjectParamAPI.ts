@@ -100,41 +100,6 @@ export class ObjectApiAppApi {
 
 }
 
-import { ObservableSpecApi } from "./ObservableAPI";
-import { SpecApiRequestFactory, SpecApiResponseProcessor} from "../apis/SpecApi";
-
-export interface SpecApiDownloadSpecRequest {
-    /**
-     * app id
-     * @type string
-     * @memberof SpecApidownloadSpec
-     */
-    appId: string
-    /**
-     * release id
-     * @type string
-     * @memberof SpecApidownloadSpec
-     */
-    releaseVersion: string
-}
-
-export class ObjectSpecApi {
-    private api: ObservableSpecApi
-
-    public constructor(configuration: Configuration, requestFactory?: SpecApiRequestFactory, responseProcessor?: SpecApiResponseProcessor) {
-        this.api = new ObservableSpecApi(configuration, requestFactory, responseProcessor);
-    }
-
-    /**
-     * Download openapi spec
-     * @param param the request object
-     */
-    public downloadSpec(param: SpecApiDownloadSpecRequest, options?: Configuration): Promise<void> {
-        return this.api.downloadSpec(param.appId, param.releaseVersion,  options).toPromise();
-    }
-
-}
-
 import { ObservableUserApi } from "./ObservableAPI";
 import { UserApiRequestFactory, UserApiResponseProcessor} from "../apis/UserApi";
 
