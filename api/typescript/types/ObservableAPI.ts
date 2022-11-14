@@ -60,10 +60,9 @@ export class ObservableApiAppApi {
      * Create an api app release
      * Create api app release
      * @param appId app id to associate the release with
-     * @param body Created release object
      */
-    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.createApiAppRelease(appId, body, _options);
+    public createApiAppRelease(appId: string, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.createApiAppRelease(appId, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);

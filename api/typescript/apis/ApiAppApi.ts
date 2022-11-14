@@ -66,16 +66,14 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
      * Create an api app release
      * Create api app release
      * @param appId app id to associate the release with
-     * @param body Created release object
      */
-    public async createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppRelease(appId: string, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
         // verify required parameter 'appId' is not null or undefined
         if (appId === null || appId === undefined) {
             throw new RequiredError("ApiAppApi", "createApiAppRelease", "appId");
         }
-
 
 
         // Path Params
@@ -86,17 +84,6 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);
         requestContext.setHeaderParam("Accept", "application/json, */*;q=0.8")
 
-
-        // Body Params
-        const contentType = ObjectSerializer.getPreferredMediaType([
-            "text"
-        ]);
-        requestContext.setHeaderParam("Content-Type", contentType);
-        const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(body, "string", ""),
-            contentType
-        );
-        requestContext.setBody(serializedBody);
 
         let authMethod: SecurityAuthentication | undefined;
         // Apply auth methods

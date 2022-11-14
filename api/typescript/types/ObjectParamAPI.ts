@@ -34,12 +34,6 @@ export interface ApiAppApiCreateApiAppReleaseRequest {
      * @memberof ApiAppApicreateApiAppRelease
      */
     appId: string
-    /**
-     * Created release object
-     * @type string
-     * @memberof ApiAppApicreateApiAppRelease
-     */
-    body?: string
 }
 
 export interface ApiAppApiCreateApiAppReleaseSdksRequest {
@@ -85,7 +79,7 @@ export class ObjectApiAppApi {
      * @param param the request object
      */
     public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest, options?: Configuration): Promise<void> {
-        return this.api.createApiAppRelease(param.appId, param.body,  options).toPromise();
+        return this.api.createApiAppRelease(param.appId,  options).toPromise();
     }
 
     /**

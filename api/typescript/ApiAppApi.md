@@ -84,8 +84,6 @@ const apiInstance = new .ApiAppApi(configuration);
 let body:.ApiAppApiCreateApiAppReleaseRequest = {
   // string | app id to associate the release with
   appId: "app_id_example",
-  // string | Created release object (optional)
-  body: "body_example",
 };
 
 apiInstance.createApiAppRelease(body).then((data:any) => {
@@ -98,7 +96,6 @@ apiInstance.createApiAppRelease(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | **string**| Created release object |
  **appId** | [**string**] | app id to associate the release with | defaults to undefined
 
 
@@ -112,7 +109,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: text
+ - **Content-Type**: application/x-www-form-urlencoded
  - **Accept**: application/json
 
 
