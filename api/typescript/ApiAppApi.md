@@ -112,7 +112,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: text
  - **Accept**: application/json
 
 

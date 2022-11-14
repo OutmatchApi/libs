@@ -89,7 +89,7 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
 
         // Body Params
         const contentType = ObjectSerializer.getPreferredMediaType([
-            "text/plain"
+            "text"
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
