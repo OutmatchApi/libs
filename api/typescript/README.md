@@ -1,4 +1,4 @@
-## @gener-api-test/api@0.0.16
+## @gener-api-test/api@0.0.17
 
 This generator creates TypeScript/JavaScript client that utilizes fetch-api.
 
@@ -21,7 +21,7 @@ navigate to the folder of your consuming project and run one of the following co
 _published:_
 
 ```
-npm install @gener-api-test/api@0.0.16 --save
+npm install @gener-api-test/api@0.0.17 --save
 ```
 
 _unPublished (not recommended):_

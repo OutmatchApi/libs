@@ -11,7 +11,6 @@ import {SecurityAuthentication} from '../auth/auth';
 import { ApiApp } from '../models/ApiApp';
 import { ApiAppRequest } from '../models/ApiAppRequest';
 import { Release } from '../models/Release';
-import { ReleaseRequest } from '../models/ReleaseRequest';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
 
@@ -67,9 +66,9 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
      * Create an api app release
      * Create api app release
      * @param appId app id to associate the release with
-     * @param releaseRequest Created release object
+     * @param body Created release object
      */
-    public async createApiAppRelease(appId: string, releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
         // verify required parameter 'appId' is not null or undefined
@@ -90,11 +89,11 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
 
         // Body Params
         const contentType = ObjectSerializer.getPreferredMediaType([
-            "application/json"
+            "text/plain"
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(releaseRequest, "ReleaseRequest", ""),
+            ObjectSerializer.serialize(body, "string", ""),
             contentType
         );
         requestContext.setBody(serializedBody);

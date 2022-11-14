@@ -4,7 +4,6 @@ export * from '../models/Language';
 export * from '../models/Logo';
 export * from '../models/ModelError';
 export * from '../models/Release';
-export * from '../models/ReleaseRequest';
 export * from '../models/Sdk';
 export * from '../models/SdkRequest';
 export * from '../models/SdkResponse';
@@ -19,7 +18,6 @@ import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
-import { ReleaseRequest } from '../models/ReleaseRequest';
 import { Sdk } from '../models/Sdk';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
@@ -57,7 +55,6 @@ let typeMap: {[index: string]: any} = {
     "Logo": Logo,
     "ModelError": ModelError,
     "Release": Release,
-    "ReleaseRequest": ReleaseRequest,
     "Sdk": Sdk,
     "SdkRequest": SdkRequest,
     "SdkResponse": SdkResponse,

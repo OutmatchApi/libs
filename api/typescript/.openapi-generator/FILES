@@ -21,7 +21,6 @@ models/Logo.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
 models/Release.ts
-models/ReleaseRequest.ts
 models/Sdk.ts
 models/SdkRequest.ts
 models/SdkResponse.ts

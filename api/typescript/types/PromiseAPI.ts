@@ -7,7 +7,6 @@ import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
-import { ReleaseRequest } from '../models/ReleaseRequest';
 import { Sdk } from '../models/Sdk';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
@@ -43,10 +42,10 @@ export class PromiseApiAppApi {
      * Create an api app release
      * Create api app release
      * @param appId app id to associate the release with
-     * @param releaseRequest Created release object
+     * @param body Created release object
      */
-    public createApiAppRelease(appId: string, releaseRequest?: ReleaseRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.createApiAppRelease(appId, releaseRequest, _options);
+    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<void> {
+        const result = this.api.createApiAppRelease(appId, body, _options);
         return result.toPromise();
     }
 

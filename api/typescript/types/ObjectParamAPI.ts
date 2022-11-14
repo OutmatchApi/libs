@@ -7,7 +7,6 @@ import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
-import { ReleaseRequest } from '../models/ReleaseRequest';
 import { Sdk } from '../models/Sdk';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
@@ -37,10 +36,10 @@ export interface ApiAppApiCreateApiAppReleaseRequest {
     appId: string
     /**
      * Created release object
-     * @type ReleaseRequest
+     * @type string
      * @memberof ApiAppApicreateApiAppRelease
      */
-    releaseRequest?: ReleaseRequest
+    body?: string
 }
 
 export interface ApiAppApiCreateApiAppReleaseSdksRequest {
@@ -86,7 +85,7 @@ export class ObjectApiAppApi {
      * @param param the request object
      */
     public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest, options?: Configuration): Promise<void> {
-        return this.api.createApiAppRelease(param.appId, param.releaseRequest,  options).toPromise();
+        return this.api.createApiAppRelease(param.appId, param.body,  options).toPromise();
     }
 
     /**
