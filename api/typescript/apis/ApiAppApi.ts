@@ -66,14 +66,16 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
      * Create an api app release
      * Create api app release
      * @param appId app id to associate the release with
+     * @param body Created release object
      */
-    public async createApiAppRelease(appId: string, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
         // verify required parameter 'appId' is not null or undefined
         if (appId === null || appId === undefined) {
             throw new RequiredError("ApiAppApi", "createApiAppRelease", "appId");
         }
+
 
 
         // Path Params
@@ -84,6 +86,17 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);
         requestContext.setHeaderParam("Accept", "application/json, */*;q=0.8")
 
+
+        // Body Params
+        const contentType = ObjectSerializer.getPreferredMediaType([
+            "text/plain"
+        ]);
+        requestContext.setHeaderParam("Content-Type", contentType);
+        const serializedBody = ObjectSerializer.stringify(
+            ObjectSerializer.serialize(body, "string", ""),
+            contentType
+        );
+        requestContext.setBody(serializedBody);
 
         let authMethod: SecurityAuthentication | undefined;
         // Apply auth methods
@@ -170,8 +183,15 @@ export class ApiAppApiResponseProcessor {
      * @params response Response returned by the server for a request to createApiApp
      * @throws ApiException if the response code was not in [200, 299]
      */
-     public async createApiApp(response: ResponseContext): Promise< void> {
+     public async createApiApp(response: ResponseContext): Promise<ApiApp > {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
+        if (isCodeInRange("200", response.httpStatusCode)) {
+            const body: ApiApp = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "ApiApp", ""
+            ) as ApiApp;
+            return body;
+        }
         if (isCodeInRange("4XX", response.httpStatusCode)) {
             const body: Error = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
@@ -179,17 +199,14 @@ export class ApiAppApiResponseProcessor {
             ) as Error;
             throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
         }
-        if (isCodeInRange("0", response.httpStatusCode)) {
+
+        // Work around for missing responses in specification, e.g. for petstore.yaml
+        if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
             const body: ApiApp = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
                 "ApiApp", ""
             ) as ApiApp;
-            throw new ApiException<ApiApp>(response.httpStatusCode, "successful operation", body, response.headers);
-        }
-
-        // Work around for missing responses in specification, e.g. for petstore.yaml
-        if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
-            return;
+            return body;
         }
 
         throw new ApiException<string | Blob | undefined>(response.httpStatusCode, "Unknown API Status Code!", await response.getBodyAsAny(), response.headers);

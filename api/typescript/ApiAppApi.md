@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **createApiApp**
-> createApiApp()
+> ApiApp createApiApp()
 
 Create an api app for the authenticated user
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**ApiApp**
 
 ### Authorization
 
@@ -61,8 +61,8 @@ void (empty response body)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
+**200** | successful operation |  -  |
 **4XX** | Client Error |  -  |
-**0** | successful operation |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
@@ -84,6 +84,8 @@ const apiInstance = new .ApiAppApi(configuration);
 let body:.ApiAppApiCreateApiAppReleaseRequest = {
   // string | app id to associate the release with
   appId: "app_id_example",
+  // string | Created release object (optional)
+  body: "body_example",
 };
 
 apiInstance.createApiAppRelease(body).then((data:any) => {
@@ -96,6 +98,7 @@ apiInstance.createApiAppRelease(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **body** | **string**| Created release object |
  **appId** | [**string**] | app id to associate the release with | defaults to undefined
 
 
@@ -109,7 +112,7 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: text/plain
  - **Accept**: application/json
 
 
