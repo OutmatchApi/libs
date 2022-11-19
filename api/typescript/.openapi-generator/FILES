@@ -2,8 +2,10 @@
 .openapi-generator-ignore
 ApiAppApi.md
 README.md
+StatusApi.md
 UserApi.md
 apis/ApiAppApi.ts
+apis/StatusApi.ts
 apis/UserApi.ts
 apis/baseapi.ts
 apis/exception.ts
@@ -25,6 +27,7 @@ models/Sdk.ts
 models/SdkRequest.ts
 models/SdkResponse.ts
 models/Spec.ts
+models/Status.ts
 models/User.ts
 models/UserPostRequest.ts
 models/UserPutRequest.ts

@@ -11,6 +11,7 @@ import { Sdk } from '../models/Sdk';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
+import { Status } from '../models/Status';
 import { User } from '../models/User';
 import { UserPostRequest } from '../models/UserPostRequest';
 import { UserPutRequest } from '../models/UserPutRequest';
@@ -58,6 +59,32 @@ export class PromiseApiAppApi {
      */
     public createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
         const result = this.api.createApiAppReleaseSdks(appId, releaseVersion, sdkRequest, _options);
+        return result.toPromise();
+    }
+
+
+}
+
+
+
+import { ObservableStatusApi } from './ObservableAPI';
+
+import { StatusApiRequestFactory, StatusApiResponseProcessor} from "../apis/StatusApi";
+export class PromiseStatusApi {
+    private api: ObservableStatusApi
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: StatusApiRequestFactory,
+        responseProcessor?: StatusApiResponseProcessor
+    ) {
+        this.api = new ObservableStatusApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     */
+    public statusGet(_options?: Configuration): Promise<void> {
+        const result = this.api.statusGet(_options);
         return result.toPromise();
     }
 

@@ -1,6 +1,6 @@
 # .UserApi
 
-All URIs are relative to *http://localhost:8000*
+All URIs are relative to *http://5.161.150.194*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

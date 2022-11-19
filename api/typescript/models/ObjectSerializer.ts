@@ -8,6 +8,7 @@ export * from '../models/Sdk';
 export * from '../models/SdkRequest';
 export * from '../models/SdkResponse';
 export * from '../models/Spec';
+export * from '../models/Status';
 export * from '../models/User';
 export * from '../models/UserPostRequest';
 export * from '../models/UserPutRequest';
@@ -22,6 +23,7 @@ import { Sdk } from '../models/Sdk';
 import { SdkRequest } from '../models/SdkRequest';
 import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
+import { Status } from '../models/Status';
 import { User } from '../models/User';
 import { UserPostRequest } from '../models/UserPostRequest';
 import { UserPutRequest } from '../models/UserPutRequest';
@@ -47,6 +49,7 @@ const supportedMediaTypes: { [mediaType: string]: number } = {
 
 let enumsMap: Set<string> = new Set<string>([
     "Language",
+    "Status",
 ]);
 
 let typeMap: {[index: string]: any} = {
