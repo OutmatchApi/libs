@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "es6",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "declaration": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "noLib": false,
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "module": "CommonJS",
+        "allowJs": true
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ],
+    "filesGlob": [
+        "./**/*.ts"
+    ]
+}
