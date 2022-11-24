@@ -12,28 +12,21 @@
 
 import { HttpFile } from '../http/http';
 
-export class Logo {
-    'url': string;
-    'altText': string;
+export class CreateApiAppRequest {
+    'name': string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "url",
-            "baseName": "url",
+            "name": "name",
+            "baseName": "name",
             "type": "string",
-            "format": "string"
-        },
-        {
-            "name": "altText",
-            "baseName": "altText",
-            "type": "string",
-            "format": "string"
+            "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return Logo.attributeTypeMap;
+        return CreateApiAppRequest.attributeTypeMap;
     }
 
     public constructor() {

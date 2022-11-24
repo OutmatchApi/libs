@@ -8,5 +8,5 @@ export * from "./servers";
 export { RequiredError } from "./apis/baseapi";
 
 export { PromiseMiddleware as Middleware } from './middleware';
-export { ApiAppApiCreateApiAppRequest, ApiAppApiCreateApiAppReleaseRequest, ApiAppApiCreateApiAppReleaseSdksRequest, ObjectApiAppApi as ApiAppApi,  StatusApiStatusGetRequest, ObjectStatusApi as StatusApi,  UserApiCreateUserRequest, UserApiUpdateUserRequest, ObjectUserApi as UserApi } from './types/ObjectParamAPI';
+export { ApiAppApiCreateApiAppRequest, ApiAppApiCreateApiAppReleaseRequest, ApiAppApiCreateApiAppReleaseSdksRequest, ObjectApiAppApi as ApiAppApi,  StatusApiGetStatusRequest, ObjectStatusApi as StatusApi,  UserApiCreateUserRequest, UserApiUpdateUserRequest, ObjectUserApi as UserApi } from './types/ObjectParamAPI';
 

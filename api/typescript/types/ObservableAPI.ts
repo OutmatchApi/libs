@@ -3,19 +3,18 @@ import { Configuration} from '../configuration'
 import { Observable, of, from } from '../rxjsStub';
 import {mergeMap, map} from  '../rxjsStub';
 import { ApiApp } from '../models/ApiApp';
-import { ApiAppRequest } from '../models/ApiAppRequest';
+import { CreateApiAppReleaseSdksRequest } from '../models/CreateApiAppReleaseSdksRequest';
+import { CreateApiAppRequest } from '../models/CreateApiAppRequest';
+import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { Sdk } from '../models/Sdk';
-import { SdkRequest } from '../models/SdkRequest';
-import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
 import { Status } from '../models/Status';
+import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { UserPostRequest } from '../models/UserPostRequest';
-import { UserPutRequest } from '../models/UserPutRequest';
 
 import { ApiAppApiRequestFactory, ApiAppApiResponseProcessor} from "../apis/ApiAppApi";
 export class ObservableApiAppApi {
@@ -36,10 +35,10 @@ export class ObservableApiAppApi {
     /**
      * Create an api app for the authenticated user
      * Create api app
-     * @param apiAppRequest Created api app object
+     * @param createApiAppRequest 
      */
-    public createApiApp(apiAppRequest?: ApiAppRequest, _options?: Configuration): Observable<ApiApp> {
-        const requestContextPromise = this.requestFactory.createApiApp(apiAppRequest, _options);
+    public createApiApp(createApiAppRequest?: CreateApiAppRequest, _options?: Configuration): Observable<ApiApp> {
+        const requestContextPromise = this.requestFactory.createApiApp(createApiAppRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -63,7 +62,7 @@ export class ObservableApiAppApi {
      * @param appId app id to associate the release with
      * @param body Created release object
      */
-    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Observable<void> {
+    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Observable<Release> {
         const requestContextPromise = this.requestFactory.createApiAppRelease(appId, body, _options);
 
         // build promise chain
@@ -87,10 +86,10 @@ export class ObservableApiAppApi {
      * Generate sdks for a relase
      * @param appId app id
      * @param releaseVersion release id
-     * @param sdkRequest Created sdks objects
+     * @param createApiAppReleaseSdksRequest 
      */
-    public createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(appId, releaseVersion, sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseVersion: string, createApiAppReleaseSdksRequest?: CreateApiAppReleaseSdksRequest, _options?: Configuration): Observable<Array<Sdk>> {
+        const requestContextPromise = this.requestFactory.createApiAppReleaseSdks(appId, releaseVersion, createApiAppReleaseSdksRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -127,9 +126,10 @@ export class ObservableStatusApi {
     }
 
     /**
+     * Check the API status
      */
-    public statusGet(_options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.statusGet(_options);
+    public getStatus(_options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.getStatus(_options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -143,7 +143,7 @@ export class ObservableStatusApi {
                 for (let middleware of this.configuration.middleware) {
                     middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
                 }
-                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.statusGet(rsp)));
+                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.getStatus(rsp)));
             }));
     }
 
@@ -168,10 +168,10 @@ export class ObservableUserApi {
     /**
      * This can only be done by the logged in user.
      * Create user
-     * @param userPostRequest Created user object
+     * @param createUserRequest 
      */
-    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Observable<User> {
-        const requestContextPromise = this.requestFactory.createUser(userPostRequest, _options);
+    public createUser(createUserRequest?: CreateUserRequest, _options?: Configuration): Observable<User> {
+        const requestContextPromise = this.requestFactory.createUser(createUserRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);
@@ -192,10 +192,10 @@ export class ObservableUserApi {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param userPutRequest Update an existent user in the store
+     * @param updateUserRequest 
      */
-    public updateUser(userPutRequest?: UserPutRequest, _options?: Configuration): Observable<void> {
-        const requestContextPromise = this.requestFactory.updateUser(userPutRequest, _options);
+    public updateUser(updateUserRequest?: UpdateUserRequest, _options?: Configuration): Observable<void> {
+        const requestContextPromise = this.requestFactory.updateUser(updateUserRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);

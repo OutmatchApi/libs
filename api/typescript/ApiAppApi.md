@@ -1,6 +1,6 @@
 # .ApiAppApi
 
-All URIs are relative to *http://5.161.150.194*
+All URIs are relative to *https://api.outmatchapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,8 +25,8 @@ const configuration = .createConfiguration();
 const apiInstance = new .ApiAppApi(configuration);
 
 let body:.ApiAppApiCreateApiAppRequest = {
-  // ApiAppRequest | Created api app object (optional)
-  apiAppRequest: {
+  // CreateApiAppRequest (optional)
+  createApiAppRequest: {
     name: "My Api",
   },
 };
@@ -41,7 +41,7 @@ apiInstance.createApiApp(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **apiAppRequest** | **ApiAppRequest**| Created api app object |
+ **createApiAppRequest** | **CreateApiAppRequest**|  |
 
 
 ### Return type
@@ -55,19 +55,19 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: application/json, application/xml
 
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | successful operation |  -  |
-**4XX** | Client Error |  -  |
+**200** | Example response |  -  |
+**4XX** | Example response |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **createApiAppRelease**
-> createApiAppRelease()
+> Release createApiAppRelease()
 
 Create an api app release
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-void (empty response body)
+**Release**
 
 ### Authorization
 
@@ -113,19 +113,18 @@ void (empty response body)
 ### HTTP request headers
 
  - **Content-Type**: text/plain
- - **Accept**: application/json
+ - **Accept**: application/json, application/xml
 
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**4XX** | Client Error |  -  |
-**0** | successful operation |  -  |
+**200** | Example response |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **createApiAppReleaseSdks**
-> createApiAppReleaseSdks()
+> Array<Sdk> createApiAppReleaseSdks()
 
 Generate sdks for a relase
 
@@ -144,8 +143,8 @@ let body:.ApiAppApiCreateApiAppReleaseSdksRequest = {
   appId: "app_id_example",
   // string | release id
   releaseVersion: "1.0.0",
-  // SdkRequest | Created sdks objects (optional)
-  sdkRequest: {
+  // CreateApiAppReleaseSdksRequest (optional)
+  createApiAppReleaseSdksRequest: {
     languages: [
       "go",
     ],
@@ -162,14 +161,14 @@ apiInstance.createApiAppReleaseSdks(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sdkRequest** | **SdkRequest**| Created sdks objects |
+ **createApiAppReleaseSdksRequest** | **CreateApiAppReleaseSdksRequest**|  |
  **appId** | [**string**] | app id | defaults to undefined
  **releaseVersion** | [**string**] | release id | defaults to undefined
 
 
 ### Return type
 
-void (empty response body)
+**Array<Sdk>**
 
 ### Authorization
 
@@ -184,8 +183,7 @@ void (empty response body)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**4XX** | Client Error |  -  |
-**0** | successful operation |  -  |
+**200** | Example response |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

@@ -9,10 +9,10 @@ import {SecurityAuthentication} from '../auth/auth';
 
 
 import { ApiApp } from '../models/ApiApp';
-import { ApiAppRequest } from '../models/ApiAppRequest';
+import { CreateApiAppReleaseSdksRequest } from '../models/CreateApiAppReleaseSdksRequest';
+import { CreateApiAppRequest } from '../models/CreateApiAppRequest';
 import { Release } from '../models/Release';
-import { SdkRequest } from '../models/SdkRequest';
-import { SdkResponse } from '../models/SdkResponse';
+import { Sdk } from '../models/Sdk';
 
 /**
  * no description
@@ -22,9 +22,9 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * Create an api app for the authenticated user
      * Create api app
-     * @param apiAppRequest Created api app object
+     * @param createApiAppRequest 
      */
-    public async createApiApp(apiAppRequest?: ApiAppRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiApp(createApiAppRequest?: CreateApiAppRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
 
@@ -42,7 +42,7 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(apiAppRequest, "ApiAppRequest", ""),
+            ObjectSerializer.serialize(createApiAppRequest, "CreateApiAppRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -118,9 +118,9 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
      * Generate sdks for a relase
      * @param appId app id
      * @param releaseVersion release id
-     * @param sdkRequest Created sdks objects
+     * @param createApiAppReleaseSdksRequest 
      */
-    public async createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createApiAppReleaseSdks(appId: string, releaseVersion: string, createApiAppReleaseSdksRequest?: CreateApiAppReleaseSdksRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
         // verify required parameter 'appId' is not null or undefined
@@ -152,7 +152,7 @@ export class ApiAppApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(sdkRequest, "SdkRequest", ""),
+            ObjectSerializer.serialize(createApiAppReleaseSdksRequest, "CreateApiAppReleaseSdksRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -197,7 +197,7 @@ export class ApiAppApiResponseProcessor {
                 ObjectSerializer.parse(await response.body.text(), contentType),
                 "Error", ""
             ) as Error;
-            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
+            throw new ApiException<Error>(response.httpStatusCode, "Example response", body, response.headers);
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml
@@ -219,26 +219,23 @@ export class ApiAppApiResponseProcessor {
      * @params response Response returned by the server for a request to createApiAppRelease
      * @throws ApiException if the response code was not in [200, 299]
      */
-     public async createApiAppRelease(response: ResponseContext): Promise< void> {
+     public async createApiAppRelease(response: ResponseContext): Promise<Release > {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
-        if (isCodeInRange("4XX", response.httpStatusCode)) {
-            const body: Error = ObjectSerializer.deserialize(
-                ObjectSerializer.parse(await response.body.text(), contentType),
-                "Error", ""
-            ) as Error;
-            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
-        }
-        if (isCodeInRange("0", response.httpStatusCode)) {
+        if (isCodeInRange("200", response.httpStatusCode)) {
             const body: Release = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
                 "Release", ""
             ) as Release;
-            throw new ApiException<Release>(response.httpStatusCode, "successful operation", body, response.headers);
+            return body;
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml
         if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
-            return;
+            const body: Release = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Release", ""
+            ) as Release;
+            return body;
         }
 
         throw new ApiException<string | Blob | undefined>(response.httpStatusCode, "Unknown API Status Code!", await response.getBodyAsAny(), response.headers);
@@ -251,26 +248,23 @@ export class ApiAppApiResponseProcessor {
      * @params response Response returned by the server for a request to createApiAppReleaseSdks
      * @throws ApiException if the response code was not in [200, 299]
      */
-     public async createApiAppReleaseSdks(response: ResponseContext): Promise< void> {
+     public async createApiAppReleaseSdks(response: ResponseContext): Promise<Array<Sdk> > {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
-        if (isCodeInRange("4XX", response.httpStatusCode)) {
-            const body: Error = ObjectSerializer.deserialize(
+        if (isCodeInRange("200", response.httpStatusCode)) {
+            const body: Array<Sdk> = ObjectSerializer.deserialize(
                 ObjectSerializer.parse(await response.body.text(), contentType),
-                "Error", ""
-            ) as Error;
-            throw new ApiException<Error>(response.httpStatusCode, "Client Error", body, response.headers);
-        }
-        if (isCodeInRange("0", response.httpStatusCode)) {
-            const body: SdkResponse = ObjectSerializer.deserialize(
-                ObjectSerializer.parse(await response.body.text(), contentType),
-                "SdkResponse", ""
-            ) as SdkResponse;
-            throw new ApiException<SdkResponse>(response.httpStatusCode, "successful operation", body, response.headers);
+                "Array<Sdk>", ""
+            ) as Array<Sdk>;
+            return body;
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml
         if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
-            return;
+            const body: Array<Sdk> = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "Array<Sdk>", ""
+            ) as Array<Sdk>;
+            return body;
         }
 
         throw new ApiException<string | Blob | undefined>(response.httpStatusCode, "Unknown API Status Code!", await response.getBodyAsAny(), response.headers);

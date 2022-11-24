@@ -1,32 +1,30 @@
 export * from '../models/ApiApp';
-export * from '../models/ApiAppRequest';
+export * from '../models/CreateApiAppReleaseSdksRequest';
+export * from '../models/CreateApiAppRequest';
+export * from '../models/CreateUserRequest';
 export * from '../models/Language';
 export * from '../models/Logo';
 export * from '../models/ModelError';
 export * from '../models/Release';
 export * from '../models/Sdk';
-export * from '../models/SdkRequest';
-export * from '../models/SdkResponse';
 export * from '../models/Spec';
 export * from '../models/Status';
+export * from '../models/UpdateUserRequest';
 export * from '../models/User';
-export * from '../models/UserPostRequest';
-export * from '../models/UserPutRequest';
 
 import { ApiApp } from '../models/ApiApp';
-import { ApiAppRequest } from '../models/ApiAppRequest';
+import { CreateApiAppReleaseSdksRequest } from '../models/CreateApiAppReleaseSdksRequest';
+import { CreateApiAppRequest } from '../models/CreateApiAppRequest';
+import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { Sdk } from '../models/Sdk';
-import { SdkRequest } from '../models/SdkRequest';
-import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
 import { Status } from '../models/Status';
+import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { UserPostRequest } from '../models/UserPostRequest';
-import { UserPutRequest } from '../models/UserPutRequest';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -54,17 +52,16 @@ let enumsMap: Set<string> = new Set<string>([
 
 let typeMap: {[index: string]: any} = {
     "ApiApp": ApiApp,
-    "ApiAppRequest": ApiAppRequest,
+    "CreateApiAppReleaseSdksRequest": CreateApiAppReleaseSdksRequest,
+    "CreateApiAppRequest": CreateApiAppRequest,
+    "CreateUserRequest": CreateUserRequest,
     "Logo": Logo,
     "ModelError": ModelError,
     "Release": Release,
     "Sdk": Sdk,
-    "SdkRequest": SdkRequest,
-    "SdkResponse": SdkResponse,
     "Spec": Spec,
+    "UpdateUserRequest": UpdateUserRequest,
     "User": User,
-    "UserPostRequest": UserPostRequest,
-    "UserPutRequest": UserPutRequest,
 }
 
 export class ObjectSerializer {

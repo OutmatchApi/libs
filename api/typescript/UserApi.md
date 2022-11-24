@@ -1,6 +1,6 @@
 # .UserApi
 
-All URIs are relative to *http://5.161.150.194*
+All URIs are relative to *https://api.outmatchapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -24,8 +24,8 @@ const configuration = .createConfiguration();
 const apiInstance = new .UserApi(configuration);
 
 let body:.UserApiCreateUserRequest = {
-  // UserPostRequest | Created user object (optional)
-  userPostRequest: {
+  // CreateUserRequest (optional)
+  createUserRequest: {
     email: "john@email.com",
     firstName: "John",
     lastName: "James",
@@ -43,7 +43,7 @@ apiInstance.createUser(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userPostRequest** | **UserPostRequest**| Created user object |
+ **createUserRequest** | **CreateUserRequest**|  |
 
 
 ### Return type
@@ -69,7 +69,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 
 # **updateUser**
-> updateUser()
+> void updateUser()
 
 This can only be done by the logged in user.
 
@@ -84,8 +84,8 @@ const configuration = .createConfiguration();
 const apiInstance = new .UserApi(configuration);
 
 let body:.UserApiUpdateUserRequest = {
-  // UserPutRequest | Update an existent user in the store (optional)
-  userPutRequest: {
+  // UpdateUserRequest (optional)
+  updateUserRequest: {
     firstName: "John",
     lastName: "James",
     company: "My Company",
@@ -102,12 +102,12 @@ apiInstance.updateUser(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userPutRequest** | **UserPutRequest**| Update an existent user in the store |
+ **updateUserRequest** | **UpdateUserRequest**|  |
 
 
 ### Return type
 
-void (empty response body)
+**void**
 
 ### Authorization
 
@@ -122,7 +122,7 @@ void (empty response body)
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**0** | successful operation |  -  |
+**202** | successful operation |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

@@ -8,9 +8,9 @@ import {canConsumeForm, isCodeInRange} from '../util';
 import {SecurityAuthentication} from '../auth/auth';
 
 
+import { CreateUserRequest } from '../models/CreateUserRequest';
+import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { UserPostRequest } from '../models/UserPostRequest';
-import { UserPutRequest } from '../models/UserPutRequest';
 
 /**
  * no description
@@ -20,9 +20,9 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * This can only be done by the logged in user.
      * Create user
-     * @param userPostRequest Created user object
+     * @param createUserRequest 
      */
-    public async createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Promise<RequestContext> {
+    public async createUser(createUserRequest?: CreateUserRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
 
@@ -40,7 +40,7 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(userPostRequest, "UserPostRequest", ""),
+            ObjectSerializer.serialize(createUserRequest, "CreateUserRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -63,9 +63,9 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param userPutRequest Update an existent user in the store
+     * @param updateUserRequest 
      */
-    public async updateUser(userPutRequest?: UserPutRequest, _options?: Configuration): Promise<RequestContext> {
+    public async updateUser(updateUserRequest?: UpdateUserRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
 
 
@@ -83,7 +83,7 @@ export class UserApiRequestFactory extends BaseAPIRequestFactory {
         ]);
         requestContext.setHeaderParam("Content-Type", contentType);
         const serializedBody = ObjectSerializer.stringify(
-            ObjectSerializer.serialize(userPutRequest, "UserPutRequest", ""),
+            ObjectSerializer.serialize(updateUserRequest, "UpdateUserRequest", ""),
             contentType
         );
         requestContext.setBody(serializedBody);
@@ -150,15 +150,19 @@ export class UserApiResponseProcessor {
      * @params response Response returned by the server for a request to updateUser
      * @throws ApiException if the response code was not in [200, 299]
      */
-     public async updateUser(response: ResponseContext): Promise< void> {
+     public async updateUser(response: ResponseContext): Promise<void > {
         const contentType = ObjectSerializer.normalizeMediaType(response.headers["content-type"]);
-        if (isCodeInRange("0", response.httpStatusCode)) {
-            throw new ApiException<undefined>(response.httpStatusCode, "successful operation", undefined, response.headers);
+        if (isCodeInRange("202", response.httpStatusCode)) {
+            return;
         }
 
         // Work around for missing responses in specification, e.g. for petstore.yaml
         if (response.httpStatusCode >= 200 && response.httpStatusCode <= 299) {
-            return;
+            const body: void = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "void", ""
+            ) as void;
+            return body;
         }
 
         throw new ApiException<string | Blob | undefined>(response.httpStatusCode, "Unknown API Status Code!", await response.getBodyAsAny(), response.headers);

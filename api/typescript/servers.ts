@@ -48,6 +48,6 @@ export class ServerConfiguration<T extends { [key: string]: string }> implements
     }
 }
 
-export const server1 = new ServerConfiguration<{  }>("http://5.161.150.194", {  })
+export const server1 = new ServerConfiguration<{  }>("https://api.outmatchapi.com", {  })
 
 export const servers = [server1];

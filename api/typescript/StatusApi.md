@@ -1,15 +1,16 @@
 # .StatusApi
 
-All URIs are relative to *http://5.161.150.194*
+All URIs are relative to *https://api.outmatchapi.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**statusGet**](StatusApi.md#statusGet) | **GET** /status | 
+[**getStatus**](StatusApi.md#getStatus) | **GET** /status | 
 
 
-# **statusGet**
-> void statusGet()
+# **getStatus**
+> void getStatus()
 
+Check the API status
 
 ### Example
 
@@ -23,7 +24,7 @@ const apiInstance = new .StatusApi(configuration);
 
 let body:any = {};
 
-apiInstance.statusGet(body).then((data:any) => {
+apiInstance.getStatus(body).then((data:any) => {
   console.log('API called successfully. Returned data: ' + data);
 }).catch((error:any) => console.error(error));
 ```

@@ -2,19 +2,18 @@ import { ResponseContext, RequestContext, HttpFile } from '../http/http';
 import { Configuration} from '../configuration'
 
 import { ApiApp } from '../models/ApiApp';
-import { ApiAppRequest } from '../models/ApiAppRequest';
+import { CreateApiAppReleaseSdksRequest } from '../models/CreateApiAppReleaseSdksRequest';
+import { CreateApiAppRequest } from '../models/CreateApiAppRequest';
+import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { Sdk } from '../models/Sdk';
-import { SdkRequest } from '../models/SdkRequest';
-import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
 import { Status } from '../models/Status';
+import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { UserPostRequest } from '../models/UserPostRequest';
-import { UserPutRequest } from '../models/UserPutRequest';
 import { ObservableApiAppApi } from './ObservableAPI';
 
 import { ApiAppApiRequestFactory, ApiAppApiResponseProcessor} from "../apis/ApiAppApi";
@@ -32,10 +31,10 @@ export class PromiseApiAppApi {
     /**
      * Create an api app for the authenticated user
      * Create api app
-     * @param apiAppRequest Created api app object
+     * @param createApiAppRequest 
      */
-    public createApiApp(apiAppRequest?: ApiAppRequest, _options?: Configuration): Promise<ApiApp> {
-        const result = this.api.createApiApp(apiAppRequest, _options);
+    public createApiApp(createApiAppRequest?: CreateApiAppRequest, _options?: Configuration): Promise<ApiApp> {
+        const result = this.api.createApiApp(createApiAppRequest, _options);
         return result.toPromise();
     }
 
@@ -45,7 +44,7 @@ export class PromiseApiAppApi {
      * @param appId app id to associate the release with
      * @param body Created release object
      */
-    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<void> {
+    public createApiAppRelease(appId: string, body?: string, _options?: Configuration): Promise<Release> {
         const result = this.api.createApiAppRelease(appId, body, _options);
         return result.toPromise();
     }
@@ -55,10 +54,10 @@ export class PromiseApiAppApi {
      * Generate sdks for a relase
      * @param appId app id
      * @param releaseVersion release id
-     * @param sdkRequest Created sdks objects
+     * @param createApiAppReleaseSdksRequest 
      */
-    public createApiAppReleaseSdks(appId: string, releaseVersion: string, sdkRequest?: SdkRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.createApiAppReleaseSdks(appId, releaseVersion, sdkRequest, _options);
+    public createApiAppReleaseSdks(appId: string, releaseVersion: string, createApiAppReleaseSdksRequest?: CreateApiAppReleaseSdksRequest, _options?: Configuration): Promise<Array<Sdk>> {
+        const result = this.api.createApiAppReleaseSdks(appId, releaseVersion, createApiAppReleaseSdksRequest, _options);
         return result.toPromise();
     }
 
@@ -82,9 +81,10 @@ export class PromiseStatusApi {
     }
 
     /**
+     * Check the API status
      */
-    public statusGet(_options?: Configuration): Promise<void> {
-        const result = this.api.statusGet(_options);
+    public getStatus(_options?: Configuration): Promise<void> {
+        const result = this.api.getStatus(_options);
         return result.toPromise();
     }
 
@@ -110,20 +110,20 @@ export class PromiseUserApi {
     /**
      * This can only be done by the logged in user.
      * Create user
-     * @param userPostRequest Created user object
+     * @param createUserRequest 
      */
-    public createUser(userPostRequest?: UserPostRequest, _options?: Configuration): Promise<User> {
-        const result = this.api.createUser(userPostRequest, _options);
+    public createUser(createUserRequest?: CreateUserRequest, _options?: Configuration): Promise<User> {
+        const result = this.api.createUser(createUserRequest, _options);
         return result.toPromise();
     }
 
     /**
      * This can only be done by the logged in user.
      * Update user
-     * @param userPutRequest Update an existent user in the store
+     * @param updateUserRequest 
      */
-    public updateUser(userPutRequest?: UserPutRequest, _options?: Configuration): Promise<void> {
-        const result = this.api.updateUser(userPutRequest, _options);
+    public updateUser(updateUserRequest?: UpdateUserRequest, _options?: Configuration): Promise<void> {
+        const result = this.api.updateUser(updateUserRequest, _options);
         return result.toPromise();
     }
 

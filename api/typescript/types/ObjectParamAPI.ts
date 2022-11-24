@@ -2,30 +2,29 @@ import { ResponseContext, RequestContext, HttpFile } from '../http/http';
 import { Configuration} from '../configuration'
 
 import { ApiApp } from '../models/ApiApp';
-import { ApiAppRequest } from '../models/ApiAppRequest';
+import { CreateApiAppReleaseSdksRequest } from '../models/CreateApiAppReleaseSdksRequest';
+import { CreateApiAppRequest } from '../models/CreateApiAppRequest';
+import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Language } from '../models/Language';
 import { Logo } from '../models/Logo';
 import { ModelError } from '../models/ModelError';
 import { Release } from '../models/Release';
 import { Sdk } from '../models/Sdk';
-import { SdkRequest } from '../models/SdkRequest';
-import { SdkResponse } from '../models/SdkResponse';
 import { Spec } from '../models/Spec';
 import { Status } from '../models/Status';
+import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { UserPostRequest } from '../models/UserPostRequest';
-import { UserPutRequest } from '../models/UserPutRequest';
 
 import { ObservableApiAppApi } from "./ObservableAPI";
 import { ApiAppApiRequestFactory, ApiAppApiResponseProcessor} from "../apis/ApiAppApi";
 
 export interface ApiAppApiCreateApiAppRequest {
     /**
-     * Created api app object
-     * @type ApiAppRequest
+     * 
+     * @type CreateApiAppRequest
      * @memberof ApiAppApicreateApiApp
      */
-    apiAppRequest?: ApiAppRequest
+    createApiAppRequest?: CreateApiAppRequest
 }
 
 export interface ApiAppApiCreateApiAppReleaseRequest {
@@ -57,11 +56,11 @@ export interface ApiAppApiCreateApiAppReleaseSdksRequest {
      */
     releaseVersion: string
     /**
-     * Created sdks objects
-     * @type SdkRequest
+     * 
+     * @type CreateApiAppReleaseSdksRequest
      * @memberof ApiAppApicreateApiAppReleaseSdks
      */
-    sdkRequest?: SdkRequest
+    createApiAppReleaseSdksRequest?: CreateApiAppReleaseSdksRequest
 }
 
 export class ObjectApiAppApi {
@@ -77,7 +76,7 @@ export class ObjectApiAppApi {
      * @param param the request object
      */
     public createApiApp(param: ApiAppApiCreateApiAppRequest = {}, options?: Configuration): Promise<ApiApp> {
-        return this.api.createApiApp(param.apiAppRequest,  options).toPromise();
+        return this.api.createApiApp(param.createApiAppRequest,  options).toPromise();
     }
 
     /**
@@ -85,7 +84,7 @@ export class ObjectApiAppApi {
      * Create api app release
      * @param param the request object
      */
-    public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest, options?: Configuration): Promise<void> {
+    public createApiAppRelease(param: ApiAppApiCreateApiAppReleaseRequest, options?: Configuration): Promise<Release> {
         return this.api.createApiAppRelease(param.appId, param.body,  options).toPromise();
     }
 
@@ -94,8 +93,8 @@ export class ObjectApiAppApi {
      * Generate sdks for a relase
      * @param param the request object
      */
-    public createApiAppReleaseSdks(param: ApiAppApiCreateApiAppReleaseSdksRequest, options?: Configuration): Promise<void> {
-        return this.api.createApiAppReleaseSdks(param.appId, param.releaseVersion, param.sdkRequest,  options).toPromise();
+    public createApiAppReleaseSdks(param: ApiAppApiCreateApiAppReleaseSdksRequest, options?: Configuration): Promise<Array<Sdk>> {
+        return this.api.createApiAppReleaseSdks(param.appId, param.releaseVersion, param.createApiAppReleaseSdksRequest,  options).toPromise();
     }
 
 }
@@ -103,7 +102,7 @@ export class ObjectApiAppApi {
 import { ObservableStatusApi } from "./ObservableAPI";
 import { StatusApiRequestFactory, StatusApiResponseProcessor} from "../apis/StatusApi";
 
-export interface StatusApiStatusGetRequest {
+export interface StatusApiGetStatusRequest {
 }
 
 export class ObjectStatusApi {
@@ -114,10 +113,11 @@ export class ObjectStatusApi {
     }
 
     /**
+     * Check the API status
      * @param param the request object
      */
-    public statusGet(param: StatusApiStatusGetRequest = {}, options?: Configuration): Promise<void> {
-        return this.api.statusGet( options).toPromise();
+    public getStatus(param: StatusApiGetStatusRequest = {}, options?: Configuration): Promise<void> {
+        return this.api.getStatus( options).toPromise();
     }
 
 }
@@ -127,20 +127,20 @@ import { UserApiRequestFactory, UserApiResponseProcessor} from "../apis/UserApi"
 
 export interface UserApiCreateUserRequest {
     /**
-     * Created user object
-     * @type UserPostRequest
+     * 
+     * @type CreateUserRequest
      * @memberof UserApicreateUser
      */
-    userPostRequest?: UserPostRequest
+    createUserRequest?: CreateUserRequest
 }
 
 export interface UserApiUpdateUserRequest {
     /**
-     * Update an existent user in the store
-     * @type UserPutRequest
+     * 
+     * @type UpdateUserRequest
      * @memberof UserApiupdateUser
      */
-    userPutRequest?: UserPutRequest
+    updateUserRequest?: UpdateUserRequest
 }
 
 export class ObjectUserApi {
@@ -156,7 +156,7 @@ export class ObjectUserApi {
      * @param param the request object
      */
     public createUser(param: UserApiCreateUserRequest = {}, options?: Configuration): Promise<User> {
-        return this.api.createUser(param.userPostRequest,  options).toPromise();
+        return this.api.createUser(param.createUserRequest,  options).toPromise();
     }
 
     /**
@@ -165,7 +165,7 @@ export class ObjectUserApi {
      * @param param the request object
      */
     public updateUser(param: UserApiUpdateUserRequest = {}, options?: Configuration): Promise<void> {
-        return this.api.updateUser(param.userPutRequest,  options).toPromise();
+        return this.api.updateUser(param.updateUserRequest,  options).toPromise();
     }
 
 }
