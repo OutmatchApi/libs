@@ -1,6 +1,6 @@
 {
     "name": "@gener-api-test/petstore",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "OpenAPI client for @gener-api-test/petstore",
     "author": "GenerAPI",
     "repository": "https://github.com/api-client-libraries/libs/tree/main/petstore/typescript",
