@@ -1,6 +1,15 @@
-## @gener-api-test/api@0.0.25
+## @gener-api-test/api@0.0.26
 
-This generator creates TypeScript/JavaScript client that utilizes fetch-api.
+### Install
+
+```
+npm install @gener-api-test/api@0.0.26 --save
+
+// Or with yarn
+
+yarn add @gener-api-test/api@0.0.26
+
+```
 
 ### Building
 
@@ -8,23 +17,23 @@ To build and compile the typescript sources to javascript use:
 ```
 npm install
 npm run build
+
+// Or with yarn
+
+yarn
+yarn build
 ```
 
-### Publishing
+## Documentation for API Endpoints
 
-First build the package then run ```npm publish```
+All URIs are relative to *https://api.outmatchapi.com*
 
-### Consuming
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*ApiAppApi* | [**createApiApp**](ApiAppApi.md#createapiapp) | **POST** /apiApp | Create api app
+*ApiAppApi* | [**createApiAppRelease**](ApiAppApi.md#createapiapprelease) | **POST** /apiApp/{app_id}/release | Create api app release
+*ApiAppApi* | [**createApiAppReleaseSdks**](ApiAppApi.md#createapiappreleasesdks) | **POST** /apiApp/{app_id}/release/{release_version}/sdk | Generate sdks for a relase
+*StatusApi* | [**getStatus**](StatusApi.md#getstatus) | **GET** /status | 
+*UserApi* | [**createUser**](UserApi.md#createuser) | **POST** /user | Create user
+*UserApi* | [**updateUser**](UserApi.md#updateuser) | **PUT** /user | Update user
 
-navigate to the folder of your consuming project and run one of the following commands.
-
-_published:_
-
-```
-npm install @gener-api-test/api@0.0.25 --save
-```
-
-_unPublished (not recommended):_
-
-```
-npm install PATH_TO_GENERATED_PACKAGE --save
