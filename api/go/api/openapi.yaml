@@ -1,0 +1,510 @@
+openapi: 3.0.3
+info:
+  contact:
+    email: internal@outmatchapi.com
+    name: internal@outmatchapi.com
+    url: https://OutmatchAPI.com
+  description: Outmatch API
+  license:
+    name: MIT
+    url: https://OutmatchAPI.com
+  title: Outmatch API
+  version: 0.0.29
+  x-logo:
+    url: https://www.outmatchapi.com/LogoBlackWithText.png
+    altText: Outmatch API
+  x-libGeneration:
+  - language: go
+    version: 1.0.0
+servers:
+- description: Production Server
+  url: https://api.outmatchapi.com
+tags:
+- description: Operations about user
+  name: user
+- description: Operation around API App
+  name: apiApp
+- description: Status endpoint
+  name: status
+paths:
+  /status:
+    get:
+      description: Check the API status
+      operationId: getStatus
+      parameters: []
+      responses:
+        "200":
+          description: Good response
+      tags:
+      - status
+  /user:
+    post:
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      parameters: []
+      requestBody:
+        $ref: '#/components/requestBodies/UserPostRequest'
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+          description: user created
+        "4XX":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Client Error
+      security:
+      - bearerAuth: []
+      summary: Create user
+      tags:
+      - user
+    put:
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters: []
+      requestBody:
+        $ref: '#/components/requestBodies/UserPutReques'
+      responses:
+        "202":
+          description: successful operation
+      security:
+      - bearerAuth: []
+      summary: Update user
+      tags:
+      - user
+  /apiApp:
+    post:
+      description: Create an api app for the authenticated user
+      operationId: createApiApp
+      parameters: []
+      requestBody:
+        $ref: '#/components/requestBodies/ApiAppRequest'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiApp'
+            application/xml:
+              schema:
+                properties: {}
+                type: object
+          description: Example response
+        "4XX":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+          description: Example response
+      security:
+      - bearerAuth: []
+      summary: Create api app
+      tags:
+      - apiApp
+  /apiApp/{app_id}/release:
+    post:
+      description: Create an api app release
+      operationId: createApiAppRelease
+      parameters:
+      - description: app id to associate the release with
+        explode: false
+        in: path
+        name: app_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        content:
+          text/plain:
+            schema:
+              type: string
+        description: Created release object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Release'
+            application/xml:
+              schema:
+                properties: {}
+                type: object
+          description: Example response
+      security:
+      - bearerAuth: []
+      summary: Create api app release
+      tags:
+      - apiApp
+  /apiApp/{app_id}/release/{release_version}/sdk:
+    post:
+      description: Generate sdks for a relase
+      operationId: createApiAppReleaseSdks
+      parameters:
+      - description: app id
+        explode: false
+        in: path
+        name: app_id
+        required: true
+        schema:
+          type: string
+        style: simple
+      - description: release id
+        example: 1.0.0
+        explode: false
+        in: path
+        name: release_version
+        required: true
+        schema:
+          type: string
+        style: simple
+      requestBody:
+        $ref: '#/components/requestBodies/SdkRequest'
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Sdk'
+                type: array
+          description: Example response
+      security:
+      - bearerAuth: []
+      summary: Generate sdks for a relase
+      tags:
+      - apiApp
+components:
+  callbacks: {}
+  links: {}
+  requestBodies:
+    UserPostRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/createUser_request'
+    ApiAppRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/createApiApp_request'
+    UserPutReques:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/updateUser_request'
+    SdkRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/createApiAppReleaseSdks_request'
+  responses:
+    ReleaseResponse:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Release'
+        application/xml:
+          schema:
+            properties: {}
+            type: object
+      description: Example response
+    SdkResponse:
+      content:
+        application/json:
+          schema:
+            items:
+              $ref: '#/components/schemas/Sdk'
+            type: array
+      description: Example response
+    ApiResponse:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ApiApp'
+        application/xml:
+          schema:
+            properties: {}
+            type: object
+      description: Example response
+    ErrorResponse:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+      description: Example response
+  schemas:
+    Error:
+      properties:
+        statusCode:
+          example: 400
+          type: integer
+        description:
+          example: Error description
+          type: string
+      required:
+      - description
+      - statusCode
+      type: object
+    User:
+      example:
+        firstName: John
+        lastName: James
+        company: My Company
+        id: 0000-0000-0000-0000
+        email: john@email.com
+      properties:
+        id:
+          example: 0000-0000-0000-0000
+          format: string
+          type: string
+        email:
+          example: john@email.com
+          type: string
+        firstName:
+          example: John
+          type: string
+        lastName:
+          example: James
+          type: string
+        company:
+          example: My Company
+          type: string
+      required:
+      - company
+      - email
+      - firstName
+      - id
+      - lastName
+      type: object
+    ApiApp:
+      example:
+        displayName: My Api
+        name: My Api
+        id: 0000-0000-0000-0000
+      properties:
+        id:
+          example: 0000-0000-0000-0000
+          format: string
+          type: string
+        name:
+          example: My Api
+          type: string
+        displayName:
+          example: My Api
+          type: string
+      required:
+      - displayName
+      - id
+      - name
+      type: object
+    Spec:
+      example:
+        specType: openapi 3.0.3
+        link: https://linktoschema.com
+        description: my api description
+        logo:
+          altText: my logo
+          url: https://linktoschema.com
+        id: 0000-0000-0000-0000
+        title: my api
+        version: 1.0.0
+      properties:
+        id:
+          example: 0000-0000-0000-0000
+          format: string
+          type: string
+        specType:
+          example: openapi 3.0.3
+          format: string
+          type: string
+        link:
+          example: https://linktoschema.com
+          format: string
+          type: string
+        title:
+          example: my api
+          format: string
+          type: string
+        description:
+          example: my api description
+          format: string
+          type: string
+        version:
+          example: 1.0.0
+          format: string
+          type: string
+        logo:
+          $ref: '#/components/schemas/Logo'
+      required:
+      - description
+      - id
+      - link
+      - logo
+      - specType
+      - title
+      - version
+      type: object
+    Logo:
+      example:
+        altText: my logo
+        url: https://linktoschema.com
+      properties:
+        url:
+          example: https://linktoschema.com
+          format: string
+          type: string
+        altText:
+          example: my logo
+          format: string
+          type: string
+      required:
+      - altText
+      - url
+      type: object
+    Release:
+      example:
+        id: 0000-0000-0000-0000
+        spec:
+          specType: openapi 3.0.3
+          link: https://linktoschema.com
+          description: my api description
+          logo:
+            altText: my logo
+            url: https://linktoschema.com
+          id: 0000-0000-0000-0000
+          title: my api
+          version: 1.0.0
+      properties:
+        id:
+          example: 0000-0000-0000-0000
+          format: string
+          type: string
+        spec:
+          $ref: '#/components/schemas/Spec'
+      required:
+      - id
+      - spec
+      type: object
+    Language:
+      enum:
+      - go
+      - typescript
+      type: string
+    Status:
+      enum:
+      - pending
+      - success
+      - fail
+      type: string
+    Sdk:
+      example:
+        codeUrl: https://linktocode.com
+        packageUrl: https://linktopackage.com
+        language: null
+        sdkVersion: 1.0.0
+        id: 0000-0000-0000-0000
+        error: error description
+        status: null
+      properties:
+        id:
+          example: 0000-0000-0000-0000
+          format: string
+          type: string
+        language:
+          $ref: '#/components/schemas/Language'
+        sdkVersion:
+          example: 1.0.0
+          format: string
+          type: string
+        codeUrl:
+          example: https://linktocode.com
+          format: string
+          type: string
+        packageUrl:
+          example: https://linktopackage.com
+          format: string
+          type: string
+        status:
+          $ref: '#/components/schemas/Status'
+        error:
+          example: error description
+          format: string
+          type: string
+      required:
+      - codeUrl
+      - error
+      - id
+      - language
+      - packageUrl
+      - sdkVersion
+      - status
+      type: object
+    updateUser_request:
+      properties:
+        firstName:
+          example: John
+          type: string
+        lastName:
+          example: James
+          type: string
+        company:
+          example: My Company
+          type: string
+      required:
+      - company
+      - firstName
+      - lastName
+      type: object
+    createUser_request:
+      properties:
+        email:
+          example: john@email.com
+          type: string
+        firstName:
+          example: John
+          type: string
+        lastName:
+          example: James
+          type: string
+        company:
+          example: My Company
+          type: string
+      required:
+      - company
+      - email
+      - firstName
+      - lastName
+      type: object
+    createApiApp_request:
+      properties:
+        name:
+          example: My Api
+          type: string
+      required:
+      - name
+      type: object
+    createApiAppReleaseSdks_request:
+      properties:
+        languages:
+          items:
+            $ref: '#/components/schemas/Language'
+          type: array
+          uniqueItems: true
+      required:
+      - languages
+      type: object
+  securitySchemes:
+    bearerAuth:
+      bearerFormat: JWT
+      scheme: bearer
+      type: http
+x-libGeneration:
+- language: typescript
+  version: 1.0.0
+- language: go
+  version: 1.0.0
