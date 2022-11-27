@@ -9,13 +9,10 @@ info:
     name: MIT
     url: https://OutmatchAPI.com
   title: Outmatch API
-  version: 0.0.31
+  version: 0.0.32
   x-logo:
     url: https://www.outmatchapi.com/LogoBlackWithText.png
     altText: Outmatch API
-  x-libGeneration:
-  - language: go
-    version: 1.0.0
 servers:
 - description: Production Server
   url: https://api.outmatchapi.com
@@ -504,7 +501,5 @@ components:
       scheme: bearer
       type: http
 x-libGeneration:
-- language: typescript
-  version: 1.0.0
 - language: go
   version: 1.0.0
