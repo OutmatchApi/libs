@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 ApiAppApi.md
 README.md
 StatusApi.md
