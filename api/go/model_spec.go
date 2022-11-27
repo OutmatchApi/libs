@@ -3,7 +3,7 @@ Outmatch API
 
 Outmatch API
 
-API version: 0.0.32
+API version: 0.0.33
 Contact: internal@outmatchapi.com
 */
 
