@@ -1,6 +1,5 @@
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/__init__.py
@@ -52,13 +51,4 @@ setup.py
 test-requirements.txt
 test/__init__.py
 test/test_models/__init__.py
-test/test_models/test_api_app.py
-test/test_models/test_error.py
-test/test_models/test_language.py
-test/test_models/test_logo.py
-test/test_models/test_release.py
-test/test_models/test_sdk.py
-test/test_models/test_spec.py
-test/test_models/test_status.py
-test/test_models/test_user.py
 tox.ini
