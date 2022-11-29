@@ -3,7 +3,7 @@ Outmatch API
 
 Outmatch API
 
-API version: 0.0.43
+API version: 0.0.44
 Contact: internal@outmatchapi.com
 */
 
@@ -42,7 +42,7 @@ var (
 	xmlCheck  = regexp.MustCompile(`(?i:(?:application|text)/xml)`)
 )
 
-// APIClient manages communication with the Outmatch API API v0.0.43
+// APIClient manages communication with the Outmatch API API v0.0.44
 // In most cases there should be only one, shared, APIClient.
 type APIClient struct {
 	cfg    *Configuration
