@@ -2,9 +2,9 @@
 
 Svix API
 
-- API version: 1.4.0
+- API version: 1.4.1
 
-- Build date: 2022-11-29T16:12:42.231772Z[Etc/UTC]
+- Build date: 2022-11-29T16:17:45.360553Z[Etc/UTC]
 
 Welcome to the Svix API documentation!
 
@@ -86,7 +86,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.openapitools</groupId>
   <artifactId>openapi-java-client</artifactId>
-  <version>1.4.0</version>
+  <version>1.4.1</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -102,7 +102,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:1.4.0"
+     implementation "org.openapitools:openapi-java-client:1.4.1"
   }
 ```
 
@@ -116,7 +116,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-- `target/openapi-java-client-1.4.0.jar`
+- `target/openapi-java-client-1.4.1.jar`
 - `target/lib/*.jar`
 
 ## Getting Started
