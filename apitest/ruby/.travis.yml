@@ -11,4 +11,4 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec
   - gem build apitest.gemspec
-  - gem install ./apitest-1.4.0.gem
+  - gem install ./apitest-1.4.1.gem
