@@ -1,13 +1,13 @@
-## @gener-api-test/apitest@1.4.0
+## @gener-api-test/apitest@1.4.1
 
 ### Install
 
 ```
-npm install @gener-api-test/apitest@1.4.0 --save
+npm install @gener-api-test/apitest@1.4.1 --save
 
 // Or with yarn
 
-yarn add @gener-api-test/apitest@1.4.0
+yarn add @gener-api-test/apitest@1.4.1
 
 ```
 

@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 ApplicationApi.md
 AuthenticationApi.md
 EndpointApi.md
