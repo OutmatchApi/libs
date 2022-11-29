@@ -11,4 +11,4 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec
   - gem build api.gemspec
-  - gem install ./api-0.0.44.gem
+  - gem install ./api-0.0.45.gem
