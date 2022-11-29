@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -137,12 +136,4 @@ model_status_code_class.go
 model_validation_error.go
 model_webhook_types.go
 response.go
-test/api_application_test.go
-test/api_authentication_test.go
-test/api_endpoint_test.go
-test/api_event_type_test.go
-test/api_health_test.go
-test/api_integration_test.go
-test/api_message_attempt_test.go
-test/api_message_test.go
 utils.go
