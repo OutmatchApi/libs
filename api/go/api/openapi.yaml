@@ -9,7 +9,7 @@ info:
     name: MIT
     url: https://OutmatchAPI.com
   title: Outmatch API
-  version: 0.0.39
+  version: 0.0.42
   x-logo:
     url: https://www.outmatchapi.com/LogoBlackWithText.png
     altText: Outmatch API
@@ -391,6 +391,12 @@ components:
       enum:
       - go
       - typescript
+      - python
+      - java
+      - kotlin
+      - php
+      - ruby
+      - rust
       type: string
     Status:
       enum:
@@ -504,4 +510,16 @@ x-libGeneration:
 - language: typescript
   version: 1.0.0
 - language: go
+  version: 1.0.0
+- language: java
+  version: 1.0.0
+- language: python
+  version: 1.0.0
+- language: kotlin
+  version: 1.0.0
+- language: ruby
+  version: 1.0.0
+- language: rust
+  version: 1.0.0
+- language: php
   version: 1.0.0

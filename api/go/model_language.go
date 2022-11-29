@@ -3,7 +3,7 @@ Outmatch API
 
 Outmatch API
 
-API version: 0.0.39
+API version: 0.0.42
 Contact: internal@outmatchapi.com
 */
 
@@ -23,12 +23,24 @@ type Language string
 const (
 	LANGUAGE_GO Language = "go"
 	LANGUAGE_TYPESCRIPT Language = "typescript"
+	LANGUAGE_PYTHON Language = "python"
+	LANGUAGE_JAVA Language = "java"
+	LANGUAGE_KOTLIN Language = "kotlin"
+	LANGUAGE_PHP Language = "php"
+	LANGUAGE_RUBY Language = "ruby"
+	LANGUAGE_RUST Language = "rust"
 )
 
 // All allowed values of Language enum
 var AllowedLanguageEnumValues = []Language{
 	"go",
 	"typescript",
+	"python",
+	"java",
+	"kotlin",
+	"php",
+	"ruby",
+	"rust",
 }
 
 func (v *Language) UnmarshalJSON(src []byte) error {
