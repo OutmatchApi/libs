@@ -2,9 +2,9 @@
 
 Outmatch API
 
-- API version: 0.0.44
+- API version: 0.0.45
 
-- Build date: 2022-11-29T15:18:19.432814Z[Etc/UTC]
+- Build date: 2022-11-29T16:08:27.015956Z[Etc/UTC]
 
 Outmatch API
 
@@ -43,7 +43,7 @@ Add this dependency to your project's POM:
 <dependency>
   <groupId>org.openapitools</groupId>
   <artifactId>openapi-java-client</artifactId>
-  <version>0.0.44</version>
+  <version>0.0.45</version>
   <scope>compile</scope>
 </dependency>
 ```
@@ -59,7 +59,7 @@ Add this dependency to your project's build file:
   }
 
   dependencies {
-     implementation "org.openapitools:openapi-java-client:0.0.44"
+     implementation "org.openapitools:openapi-java-client:0.0.45"
   }
 ```
 
@@ -73,7 +73,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-- `target/openapi-java-client-0.0.44.jar`
+- `target/openapi-java-client-0.0.45.jar`
 - `target/lib/*.jar`
 
 ## Getting Started

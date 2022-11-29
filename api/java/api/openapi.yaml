@@ -9,7 +9,7 @@ info:
     name: MIT
     url: https://OutmatchAPI.com
   title: Outmatch API
-  version: 0.0.44
+  version: 0.0.45
   x-logo:
     url: https://www.outmatchapi.com/LogoBlackWithText.png
     altText: Outmatch API

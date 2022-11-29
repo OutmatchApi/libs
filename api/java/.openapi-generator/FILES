@@ -1,6 +1,5 @@
 .github/workflows/maven.yml
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -65,19 +64,3 @@ src/main/java/invalidPackageName/auth/ApiKeyAuth.java
 src/main/java/invalidPackageName/auth/Authentication.java
 src/main/java/invalidPackageName/auth/HttpBasicAuth.java
 src/main/java/invalidPackageName/auth/HttpBearerAuth.java
-src/test/java/api/ApiAppApiTest.java
-src/test/java/api/StatusApiTest.java
-src/test/java/api/UserApiTest.java
-src/test/java/com/outmatchapi/api/ApiAppTest.java
-src/test/java/com/outmatchapi/api/CreateApiAppReleaseSdksRequestTest.java
-src/test/java/com/outmatchapi/api/CreateApiAppRequestTest.java
-src/test/java/com/outmatchapi/api/CreateUserRequestTest.java
-src/test/java/com/outmatchapi/api/ErrorTest.java
-src/test/java/com/outmatchapi/api/LanguageTest.java
-src/test/java/com/outmatchapi/api/LogoTest.java
-src/test/java/com/outmatchapi/api/ReleaseTest.java
-src/test/java/com/outmatchapi/api/SdkTest.java
-src/test/java/com/outmatchapi/api/SpecTest.java
-src/test/java/com/outmatchapi/api/StatusTest.java
-src/test/java/com/outmatchapi/api/UpdateUserRequestTest.java
-src/test/java/com/outmatchapi/api/UserTest.java
