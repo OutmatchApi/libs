@@ -1,6 +1,6 @@
 {
     "name": "@gener-api-test/api",
-    "version": "0.0.43",
+    "version": "0.0.44",
     "description": "OpenAPI client for @gener-api-test/api",
     "author": "api",
     "repository": "https://github.com/api-client-libraries/libs/tree/main/api/typescript",
