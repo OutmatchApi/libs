@@ -1,0 +1,119 @@
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: typescript (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'typescript' is considered experimental.
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.DefaultGenerator - Model RecoverOut not generated since it's a free-form object
+[main] INFO  o.o.codegen.DefaultGenerator - Model ReplayOut not generated since it's a free-form object
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ApplicationIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ApplicationOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/DashboardAccessOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointCreatedEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointCreatedEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointDeletedEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointDeletedEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointDisabledEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointDisabledEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointHeadersIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointHeadersOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointHeadersPatchIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointMessageOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointSecretOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointSecretRotateIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointStats.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointUpdate.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointUpdatedEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EndpointUpdatedEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EventTypeIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EventTypeOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/EventTypeUpdate.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/HTTPValidationError.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/HttpErrorOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/IntegrationIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/IntegrationKeyOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/IntegrationOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/IntegrationUpdate.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseApplicationOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseEndpointMessageOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseEndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseEventTypeOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseIntegrationOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseMessageAttemptEndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseMessageAttemptOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseMessageEndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ListResponseMessageOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptEndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptExhaustedEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptExhaustedEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptFailedData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptFailingEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptFailingEventData.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageAttemptTriggerType.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageEndpointOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageOut.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/MessageStatus.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/RecoverIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ReplayIn.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/StatusCodeClass.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ValidationError.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/WebhookTypes.ts
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/ApplicationApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/ApplicationApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/AuthenticationApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/AuthenticationApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/EndpointApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/EndpointApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/EventTypeApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/EventTypeApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/HealthApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/HealthApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/IntegrationApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/IntegrationApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/MessageApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/MessageApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/MessageAttemptApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/MessageAttemptApi.md
+[main] INFO  o.o.codegen.utils.URLPathUtils - 'host' (OAS 2.0) or 'servers' (OAS 3.0) not defined in the spec. Default to [http://localhost] for server URL [http://localhost/]
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/util.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/exception.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/http/http.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/servers.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/configuration.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/auth/auth.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/all.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/types/PromiseAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/types/ObservableAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/types/ObjectParamAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/models/ObjectSerializer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/middleware.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/apis/baseapi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/index.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/http/isomorphic-fetch.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/package.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/tsconfig.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/rxjsStub.ts
+[main] INFO  o.o.codegen.TemplateManager - Skipped /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-1c1239b7-1da2-4929-ae09-ef91dd41da80Fuh85W/apitest/typescript/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
