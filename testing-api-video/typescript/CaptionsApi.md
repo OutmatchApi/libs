@@ -273,7 +273,7 @@ let body:.CaptionsApiPOSTVideosVideoIdCaptionsLanguageRequest = {
   // string | A valid BCP 47 language representation.
   language: "en",
   // HttpFile | The video text track (VTT) you want to upload.
-  file: { data: Buffer.from(fs.readFileSync('[B@42211e04', 'utf-8')), name: '[B@42211e04' },
+  file: { data: Buffer.from(fs.readFileSync('[B@29892a77', 'utf-8')), name: '[B@29892a77' },
 };
 
 apiInstance.pOSTVideosVideoIdCaptionsLanguage(body).then((data:any) => {

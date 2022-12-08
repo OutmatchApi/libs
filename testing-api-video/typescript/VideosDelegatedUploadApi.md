@@ -203,7 +203,7 @@ let body:.VideosDelegatedUploadApiPOSTUploadRequest = {
   // string | The unique identifier for the token you want to use to upload a video.
   token: "to1tcmSFHeYY5KzyhOqVKMKb",
   // HttpFile | The path to the video you want to upload.
-  file: { data: Buffer.from(fs.readFileSync('[B@a03529c', 'utf-8')), name: '[B@a03529c' },
+  file: { data: Buffer.from(fs.readFileSync('[B@a4df251', 'utf-8')), name: '[B@a4df251' },
   // string | Content-Range represents the range of bytes that will be returned as a result of the request. Byte ranges are inclusive, meaning that bytes 0-999 represents the first 1000 bytes in a file or object. (optional)
   contentRange: "Content-Range: bytes 200-100/5000",
   // string | The video id returned by the first call to this endpoint in a large video upload scenario. (optional)

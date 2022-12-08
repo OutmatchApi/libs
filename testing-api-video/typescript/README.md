@@ -1,13 +1,13 @@
-## @apilibraries/testing-api-video@1.0.0
+## @apilibraries/testing-api-video@1.0.1
 
 ### Install
 
 ```
-npm install @apilibraries/testing-api-video@1.0.0 --save
+npm install @apilibraries/testing-api-video@1.0.1 --save
 
 // Or with yarn
 
-yarn add @apilibraries/testing-api-video@1.0.0
+yarn add @apilibraries/testing-api-video@1.0.1
 
 ```
 

@@ -491,7 +491,7 @@ let body:.VideosApiPOSTVideosVideoIdSourceRequest = {
   // string | Enter the videoId you want to use to upload your video.
   videoId: "vi4k0jvEUuaTdRAEjQ4Jfrgz",
   // HttpFile | The path to the video you would like to upload. The path must be local. If you want to use a video from an online source, you must use the \\\"/videos\\\" endpoint and add the \\\"source\\\" parameter when you create a new video.
-  file: { data: Buffer.from(fs.readFileSync('[B@1760e594', 'utf-8')), name: '[B@1760e594' },
+  file: { data: Buffer.from(fs.readFileSync('[B@71e7830a', 'utf-8')), name: '[B@71e7830a' },
   // string | Content-Range represents the range of bytes that will be returned as a result of the request. Byte ranges are inclusive, meaning that bytes 0-999 represents the first 1000 bytes in a file or object. (optional)
   contentRange: "Content-Range: bytes 200-100/5000",
 };

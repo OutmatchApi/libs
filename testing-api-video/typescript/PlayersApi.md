@@ -372,7 +372,7 @@ let body:.PlayersApiPOSTPlayersPlayerIdLogoRequest = {
   // string | The unique identifier for the player.
   playerId: "pl14Db6oMJRH6SRVoOwORacK",
   // HttpFile | The name of the file you want to use for your logo.
-  file: { data: Buffer.from(fs.readFileSync('[B@1179fc8c', 'utf-8')), name: '[B@1179fc8c' },
+  file: { data: Buffer.from(fs.readFileSync('[B@4269aad7', 'utf-8')), name: '[B@4269aad7' },
   // string | The path to the file you want to upload and use as a logo.
   link: "path/to/my/logo/mylogo.jpg",
 };

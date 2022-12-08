@@ -1,6 +1,6 @@
 {
     "name": "@apilibraries/testing-api-video",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "OpenAPI client for @apilibraries/testing-api-video",
     "author": "testing-api-video",
     "repository": "https://github.com/api-client-libraries/libs/tree/main/testing-api-video/typescript",
