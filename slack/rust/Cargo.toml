@@ -1,0 +1,19 @@
+[package]
+name = "slack"
+version = "1.7.0"
+authors = ["OpenAPI Generator team and contributors"]
+description = "One way to interact with the Slack platform is its HTTP RPC-based Web API, a collection of methods requiring OAuth 2.0-based user, bot, or workspace tokens blessed with related OAuth scopes."
+# Override this license by providing a License Object in the OpenAPI.
+license = "Unlicense"
+edition = "2018"
+
+[dependencies]
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_with = "^2.0"
+serde_json = "^1.0"
+url = "^2.2"
+uuid = { version = "^1.0", features = ["serde"] }
+[dependencies.reqwest]
+version = "^0.11"
+features = ["json", "multipart"]
