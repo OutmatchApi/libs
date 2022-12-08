@@ -1,0 +1,19 @@
+
+# UsersSetActiveErrorSchema
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**error** | [**inline**](#Error) |  | 
+**ok** | [**DefsOkFalse**](DefsOkFalse.md) |  | 
+**callstack** | **kotlin.String** | Note: PHP callstack is only visible in dev/qa |  [optional]
+
+
+<a name="Error"></a>
+## Enum: error
+Name | Value
+---- | -----
+error | not_authed, invalid_auth, account_inactive, token_revoked, no_permission, org_login_required, ekm_access_denied, missing_scope, invalid_arguments, invalid_arg_name, invalid_charset, invalid_form_data, invalid_post_type, missing_post_type, team_added_to_org, request_timeout, fatal_error, internal_error
+
+
+
