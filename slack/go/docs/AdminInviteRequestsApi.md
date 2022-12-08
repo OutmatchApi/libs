@@ -1,0 +1,219 @@
+# \AdminInviteRequestsApi
+
+All URIs are relative to *https://slack.com/api*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**AdminInviteRequestsApprove**](AdminInviteRequestsApi.md#AdminInviteRequestsApprove) | **Post** /admin.inviteRequests.approve | 
+[**AdminInviteRequestsDeny**](AdminInviteRequestsApi.md#AdminInviteRequestsDeny) | **Post** /admin.inviteRequests.deny | 
+[**AdminInviteRequestsList**](AdminInviteRequestsApi.md#AdminInviteRequestsList) | **Get** /admin.inviteRequests.list | 
+
+
+
+## AdminInviteRequestsApprove
+
+> DefaultSuccessTemplate AdminInviteRequestsApprove(ctx).Token(token).AdminInviteRequestsApproveRequest(adminInviteRequestsApproveRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    token := "token_example" // string | Authentication token. Requires scope: `admin.invites:write`
+    adminInviteRequestsApproveRequest := TODO // AdminInviteRequestsApproveRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.AdminInviteRequestsApi.AdminInviteRequestsApprove(context.Background()).Token(token).AdminInviteRequestsApproveRequest(adminInviteRequestsApproveRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AdminInviteRequestsApi.AdminInviteRequestsApprove``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `AdminInviteRequestsApprove`: DefaultSuccessTemplate
+    fmt.Fprintf(os.Stdout, "Response from `AdminInviteRequestsApi.AdminInviteRequestsApprove`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiAdminInviteRequestsApproveRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string** | Authentication token. Requires scope: &#x60;admin.invites:write&#x60; | 
+ **adminInviteRequestsApproveRequest** | [**AdminInviteRequestsApproveRequest**](AdminInviteRequestsApproveRequest.md) |  | 
+
+### Return type
+
+[**DefaultSuccessTemplate**](DefaultSuccessTemplate.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/x-www-form-urlencoded
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## AdminInviteRequestsDeny
+
+> DefaultSuccessTemplate AdminInviteRequestsDeny(ctx).Token(token).AdminInviteRequestsApproveRequest(adminInviteRequestsApproveRequest).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    token := "token_example" // string | Authentication token. Requires scope: `admin.invites:write`
+    adminInviteRequestsApproveRequest := TODO // AdminInviteRequestsApproveRequest |  (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.AdminInviteRequestsApi.AdminInviteRequestsDeny(context.Background()).Token(token).AdminInviteRequestsApproveRequest(adminInviteRequestsApproveRequest).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AdminInviteRequestsApi.AdminInviteRequestsDeny``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `AdminInviteRequestsDeny`: DefaultSuccessTemplate
+    fmt.Fprintf(os.Stdout, "Response from `AdminInviteRequestsApi.AdminInviteRequestsDeny`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiAdminInviteRequestsDenyRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string** | Authentication token. Requires scope: &#x60;admin.invites:write&#x60; | 
+ **adminInviteRequestsApproveRequest** | [**AdminInviteRequestsApproveRequest**](AdminInviteRequestsApproveRequest.md) |  | 
+
+### Return type
+
+[**DefaultSuccessTemplate**](DefaultSuccessTemplate.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+- **Content-Type**: application/x-www-form-urlencoded
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
+
+## AdminInviteRequestsList
+
+> DefaultSuccessTemplate AdminInviteRequestsList(ctx).Token(token).TeamId(teamId).Cursor(cursor).Limit(limit).Execute()
+
+
+
+
+
+### Example
+
+```go
+package main
+
+import (
+    "context"
+    "fmt"
+    "os"
+    openapiclient "./openapi"
+)
+
+func main() {
+    token := "token_example" // string | Authentication token. Requires scope: `admin.invites:read`
+    teamId := "teamId_example" // string | ID for the workspace where the invite requests were made. (optional)
+    cursor := "cursor_example" // string | Value of the `next_cursor` field sent as part of the previous API response (optional)
+    limit := int32(56) // int32 | The number of results that will be returned by the API on each invocation. Must be between 1 - 1000, both inclusive (optional)
+
+    configuration := openapiclient.NewConfiguration()
+    apiClient := openapiclient.NewAPIClient(configuration)
+    resp, r, err := apiClient.AdminInviteRequestsApi.AdminInviteRequestsList(context.Background()).Token(token).TeamId(teamId).Cursor(cursor).Limit(limit).Execute()
+    if err != nil {
+        fmt.Fprintf(os.Stderr, "Error when calling `AdminInviteRequestsApi.AdminInviteRequestsList``: %v\n", err)
+        fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
+    }
+    // response from `AdminInviteRequestsList`: DefaultSuccessTemplate
+    fmt.Fprintf(os.Stdout, "Response from `AdminInviteRequestsApi.AdminInviteRequestsList`: %v\n", resp)
+}
+```
+
+### Path Parameters
+
+
+
+### Other Parameters
+
+Other parameters are passed through a pointer to a apiAdminInviteRequestsListRequest struct via the builder pattern
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **token** | **string** | Authentication token. Requires scope: &#x60;admin.invites:read&#x60; | 
+ **teamId** | **string** | ID for the workspace where the invite requests were made. | 
+ **cursor** | **string** | Value of the &#x60;next_cursor&#x60; field sent as part of the previous API response | 
+ **limit** | **int32** | The number of results that will be returned by the API on each invocation. Must be between 1 - 1000, both inclusive | 
+
+### Return type
+
+[**DefaultSuccessTemplate**](DefaultSuccessTemplate.md)
+
+### Authorization
+
+[slackAuth](../README.md#slackAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints)
+[[Back to Model list]](../README.md#documentation-for-models)
+[[Back to README]](../README.md)
+
