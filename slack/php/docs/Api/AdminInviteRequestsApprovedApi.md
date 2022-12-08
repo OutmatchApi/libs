@@ -1,0 +1,74 @@
+# OpenAPI\Client\AdminInviteRequestsApprovedApi
+
+All URIs are relative to https://slack.com/api, except if the operation defines another base path.
+
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**adminInviteRequestsApprovedList()**](AdminInviteRequestsApprovedApi.md#adminInviteRequestsApprovedList) | **GET** /admin.inviteRequests.approved.list |  |
+
+
+## `adminInviteRequestsApprovedList()`
+
+```php
+adminInviteRequestsApprovedList($token, $team_id, $cursor, $limit): \OpenAPI\Client\Model\DefaultSuccessTemplate
+```
+
+
+
+List all approved workspace invite requests.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure OAuth2 access token for authorization: slackAuth
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+
+$apiInstance = new OpenAPI\Client\Api\AdminInviteRequestsApprovedApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$token = 'token_example'; // string | Authentication token. Requires scope: `admin.invites:read`
+$team_id = 'team_id_example'; // string | ID for the workspace where the invite requests were made.
+$cursor = 'cursor_example'; // string | Value of the `next_cursor` field sent as part of the previous API response
+$limit = 56; // int | The number of results that will be returned by the API on each invocation. Must be between 1 - 1000, both inclusive
+
+try {
+    $result = $apiInstance->adminInviteRequestsApprovedList($token, $team_id, $cursor, $limit);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling AdminInviteRequestsApprovedApi->adminInviteRequestsApprovedList: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **token** | **string**| Authentication token. Requires scope: &#x60;admin.invites:read&#x60; | |
+| **team_id** | **string**| ID for the workspace where the invite requests were made. | [optional] |
+| **cursor** | **string**| Value of the &#x60;next_cursor&#x60; field sent as part of the previous API response | [optional] |
+| **limit** | **int**| The number of results that will be returned by the API on each invocation. Must be between 1 - 1000, both inclusive | [optional] |
+
+### Return type
+
+[**\OpenAPI\Client\Model\DefaultSuccessTemplate**](../Model/DefaultSuccessTemplate.md)
+
+### Authorization
+
+[slackAuth](../../README.md#slackAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)

@@ -1,0 +1,14 @@
+# # ObjsMessageAttachmentsInner
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**fallback** | **string** |  | [optional]
+**id** | **int** |  |
+**image_bytes** | **int** |  | [optional]
+**image_height** | **int** |  | [optional]
+**image_url** | **string** |  | [optional]
+**image_width** | **int** |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
