@@ -1,0 +1,414 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: php (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'php' is considered stable.
+[main] INFO  o.o.c.languages.AbstractPhpCodegen - Environment variable PHP_POST_PROCESS_FILE not defined so the PHP code may not be properly formatted. To define it, try 'export PHP_POST_PROCESS_FILE="/usr/local/bin/prettier --write"' (Linux/Mac)
+[main] INFO  o.o.c.languages.AbstractPhpCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] WARN  o.o.codegen.DefaultCodegen - allOf with multiple schemas defined. Using only the first one: playerinput
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/AccessToken.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/AccessTokenTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/AccessToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Account.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/AccountTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Account.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/AccountQuota.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/AccountQuotaTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/AccountQuota.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/AuthenticatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/AuthenticatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/AuthenticatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/BadRequest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/BadRequestTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/BadRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/BytesRange.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/BytesRangeTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/BytesRange.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/CaptionsListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/CaptionsListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/CaptionsListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/CaptionsUpdatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/CaptionsUpdatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/CaptionsUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Chapter.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/ChapterTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Chapter.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/ChaptersListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/ChaptersListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/ChaptersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Link.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LinkTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Link.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStream.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamAssets.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamAssetsTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamCreatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamCreatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSession.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSessionClient.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionClientTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSessionDevice.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionDeviceTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSessionLocation.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionLocationTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSessionReferrer.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionReferrerTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamSessionSession.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamSessionSessionTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/LiveStreamUpdatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/LiveStreamUpdatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/LiveStreamUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Metadata.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/MetadataTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Metadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/NotFound.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/NotFoundTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/NotFound.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Pagination.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PaginationTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Pagination.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PaginationLink.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PaginationLinkTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PaginationLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Player.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Player.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayerAllOf.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerAllOfTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayerAllOf.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayerAllOfAssets.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerAllOfAssetsTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayerAllOfAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayerCreationPayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerCreationPayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayerCreationPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayerSessionEvent.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerSessionEventTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayerSessionEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayerUpdatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerUpdatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayerUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Playerinput.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayerinputTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Playerinput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/PlayersListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/PlayersListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/PlayersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Quality.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/QualityTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Quality.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/RawStatisticsListLiveStreamAnalyticsResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/RawStatisticsListLiveStreamAnalyticsResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/RawStatisticsListLiveStreamAnalyticsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/RawStatisticsListPlayerSessionEventsResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/RawStatisticsListPlayerSessionEventsResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/RawStatisticsListPlayerSessionEventsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/RawStatisticsListSessionsResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/RawStatisticsListSessionsResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/RawStatisticsListSessionsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/RefreshTokenPayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/RefreshTokenPayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/RefreshTokenPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Subtitle.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/SubtitleTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Subtitle.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/TokenCreatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/TokenCreatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/TokenCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/TokenListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/TokenListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/TokenListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/UploadToken.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/UploadTokenTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/UploadToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Video.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Video.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoAssets.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoAssetsTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoCreatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoCreatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSession.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionClient.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionClientTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionDevice.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionDeviceTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionLocation.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionLocationTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionOs.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionOsTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionOs.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionReferrer.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionReferrerTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSessionSession.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSessionSessionTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSource.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSourceTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSource.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSourceLiveStream.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSourceLiveStreamTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSourceLiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoSourceLiveStreamLink.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoSourceLiveStreamLinkTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoSourceLiveStreamLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoThumbnailPickPayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoThumbnailPickPayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoThumbnailPickPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideoUpdatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideoUpdatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideoUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideosListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideosListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideosListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Videostatus.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideostatusTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Videostatus.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideostatusEncoding.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideostatusEncodingTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideostatusEncoding.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideostatusEncodingMetadata.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideostatusEncodingMetadataTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideostatusEncodingMetadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/VideostatusIngest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/VideostatusIngestTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/VideostatusIngest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/Webhook.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/WebhookTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/Webhook.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/WebhooksCreatePayload.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/WebhooksCreatePayloadTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/WebhooksCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/WebhooksListResponse.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Model/WebhooksListResponseTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Model/WebhooksListResponse.md
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/AccountApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/AccountApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/AnalyticsApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/AnalyticsApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/AuthenticationApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/AuthenticationApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/CaptionsApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/CaptionsApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/ChaptersApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/ChaptersApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/LiveApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/LiveApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/PlayersApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/PlayersApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/VideosApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/VideosApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/VideosDelegatedUploadApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/VideosDelegatedUploadApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/video-api/WebhooksApi.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/test/Api/WebhooksApiTest.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/docs/Api/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/ApiException.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Configuration.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/ObjectSerializer.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/Model/ModelInterface.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/lib/HeaderSelector.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/composer.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/phpunit.xml.dist
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.travis.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.php-cs-fixer.dist.php
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-b787c146-415b-476d-8150-1ce6a54fd3bclyjATa/video-api/php/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
