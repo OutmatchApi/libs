@@ -1,0 +1,347 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: go (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'go' is considered stable.
+[main] INFO  o.o.c.languages.AbstractGoCodegen - Environment variable GO_POST_PROCESS_FILE not defined so Go code may not be properly formatted. To define it, try `export GO_POST_PROCESS_FILE="/usr/local/bin/gofmt -w"` (Linux/Mac)
+[main] INFO  o.o.c.languages.AbstractGoCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] WARN  o.o.codegen.DefaultCodegen - allOf with multiple schemas defined. Using only the first one: playerinput
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_access_token.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AccessToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_account.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Account.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_account_quota.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AccountQuota.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_authenticate_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AuthenticatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_bad_request.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/BadRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_bytes_range.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/BytesRange.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_captions_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/CaptionsListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_captions_update_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/CaptionsUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_chapter.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Chapter.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_chapters_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/ChaptersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_link.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Link.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_assets.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_create_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session_client.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session_device.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session_location.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session_referrer.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_session_session.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_live_stream_update_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveStreamUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_metadata.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Metadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_not_found.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/NotFound.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_pagination.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Pagination.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_pagination_link.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PaginationLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Player.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player_all_of.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayerAllOf.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player_all_of_assets.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayerAllOfAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player_creation_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayerCreationPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player_session_event.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayerSessionEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_player_update_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayerUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_playerinput.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Playerinput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_players_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_quality.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Quality.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_raw_statistics_list_live_stream_analytics_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/RawStatisticsListLiveStreamAnalyticsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_raw_statistics_list_player_session_events_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/RawStatisticsListPlayerSessionEventsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_raw_statistics_list_sessions_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/RawStatisticsListSessionsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_refresh_token_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/RefreshTokenPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_subtitle.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Subtitle.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_token_create_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/TokenCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_token_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/TokenListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_upload_token.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/UploadToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Video.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_assets.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_create_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_client.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_device.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_location.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_os.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionOs.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_referrer.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_session_session.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_source.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSource.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_source_live_stream.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSourceLiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_source_live_stream_link.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoSourceLiveStreamLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_thumbnail_pick_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoThumbnailPickPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_video_update_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideoUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_videos_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideosListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_videostatus.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Videostatus.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_videostatus_encoding.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideostatusEncoding.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_videostatus_encoding_metadata.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideostatusEncodingMetadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_videostatus_ingest.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideostatusIngest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_webhook.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/Webhook.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_webhooks_create_payload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/WebhooksCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/model_webhooks_list_response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/WebhooksListResponse.md
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_account.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_account_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_analytics.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_analytics_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_authentication.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_authentication_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_captions.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_captions_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_chapters.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_chapters_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_live.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_live_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_players.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_players_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_videos.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_videos_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_videos_delegated_upload.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_videos_delegated_upload_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api_webhooks.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/test/api_webhooks_test.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/docs/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/api/openapi.yaml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/configuration.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/client.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/response.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/go.mod
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/go.sum
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/.travis.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/utils.go
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-e145d77e-bacb-4fd5-b2bd-057969684d66nTcMnw/video-api/go/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
