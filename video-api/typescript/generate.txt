@@ -1,0 +1,280 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: typescript (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'typescript' is considered experimental.
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] WARN  o.o.codegen.DefaultCodegen - The value (generator's option) must be either boolean or string. Default to `false`.
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/AccessToken.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Account.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/AccountQuota.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/AuthenticatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/BadRequest.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/BytesRange.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/CaptionsListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/CaptionsUpdatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Chapter.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/ChaptersListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Link.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStream.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamAssets.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamCreatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSession.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSessionClient.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSessionDevice.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSessionLocation.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSessionReferrer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamSessionSession.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/LiveStreamUpdatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Metadata.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/NotFound.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Pagination.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PaginationLink.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Player.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayerAllOf.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayerAllOfAssets.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayerCreationPayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayerSessionEvent.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayerUpdatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Playerinput.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/PlayersListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Quality.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/RawStatisticsListLiveStreamAnalyticsResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/RawStatisticsListPlayerSessionEventsResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/RawStatisticsListSessionsResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/RefreshTokenPayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Subtitle.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/TokenCreatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/TokenListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/UploadToken.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Video.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoAssets.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoCreatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSession.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionClient.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionDevice.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionLocation.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionOs.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionReferrer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSessionSession.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSource.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSourceLiveStream.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoSourceLiveStreamLink.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoThumbnailPickPayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideoUpdatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideosListResponse.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Videostatus.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideostatusEncoding.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideostatusEncodingMetadata.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/VideostatusIngest.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/Webhook.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/WebhooksCreatePayload.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/WebhooksListResponse.ts
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/AccountApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/AnalyticsApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/AuthenticationApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/CaptionsApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/ChaptersApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/LiveApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/PlayersApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/VideosApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/VideosDelegatedUploadApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/WebhooksApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/util.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/exception.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/http/http.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/servers.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/configuration.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/auth/auth.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/all.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/types/PromiseAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/types/ObservableAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/types/ObjectParamAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/models/ObjectSerializer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/middleware.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/apis/baseapi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/index.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/http/isomorphic-fetch.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/package.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/tsconfig.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/rxjsStub.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d15b5887-2b0b-4199-8ba5-74266f723f97TeSuBo/video-api/typescript/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
