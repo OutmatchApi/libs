@@ -1,0 +1,484 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: java (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'java' is considered stable.
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Environment variable JAVA_POST_PROCESS_FILE not defined so the Java code may not be properly formatted. To define it, try 'export JAVA_POST_PROCESS_FILE="/usr/local/bin/clang-format -i"' (Linux/Mac)
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Invoker Package Name, originally not set, is now derived from api package name: 
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_account
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_analytics-live-streams-liveStreamId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_analytics-sessions-sessionId-events
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_analytics-videos-videoId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_auth-api-key
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_auth-refresh
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_live-streams
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_live-streams
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_live-streams-liveStreamId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_live-streams-liveStreamId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation PATCH_live-streams-liveStreamId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_live-streams-liveStreamId-thumbnail
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_live-streams-liveStreamId-thumbnail
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_players
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_players
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_players-playerId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_players-playerId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation PATCH_players-playerId
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_players-playerId-logo
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_players-playerId-logo
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_upload
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_upload-tokens
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_upload-tokens
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_upload-tokens-uploadToken
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_upload-tokens-uploadToken
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation LIST-videos
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST-video
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET-video
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE-video
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation PATCH-video
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_videos-videoId-captions
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_videos-videoId-captions-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_videos-videoId-captions-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_videos-videoId-captions-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation PATCH_videos-videoId-captions-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_videos-videoId-chapters
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET_videos-videoId-chapters-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_videos-videoId-chapters-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE_videos-videoId-chapters-language
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_videos-videoId-source
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET-video-status
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST_videos-videoId-thumbnail
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation PATCH_videos-videoId-thumbnail
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation LIST-webhooks
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation POST-webhooks
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation GET-Webhook
+[main] INFO  o.o.c.languages.AbstractJavaCodegen - Processing operation DELETE-webhook
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] WARN  o.o.codegen.DefaultCodegen - allOf with multiple schemas defined. Using only the first one: playerinput
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/AccessToken.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/AccessTokenTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AccessToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Account.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/AccountTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Account.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/AccountQuota.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/AccountQuotaTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AccountQuota.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/AuthenticatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/AuthenticatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AuthenticatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/BadRequest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/BadRequestTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/BadRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/BytesRange.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/BytesRangeTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/BytesRange.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/CaptionsListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/CaptionsListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/CaptionsListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/CaptionsUpdatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/CaptionsUpdatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/CaptionsUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Chapter.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/ChapterTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Chapter.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/ChaptersListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/ChaptersListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/ChaptersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Link.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LinkTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Link.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStream.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamAssets.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamAssetsTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamCreatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamCreatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSession.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSessionClient.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionClientTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSessionDevice.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionDeviceTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSessionLocation.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionLocationTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSessionReferrer.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionReferrerTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamSessionSession.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamSessionSessionTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/LiveStreamUpdatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/LiveStreamUpdatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveStreamUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Metadata.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/MetadataTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Metadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/NotFound.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/NotFoundTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/NotFound.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Pagination.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PaginationTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Pagination.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PaginationLink.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PaginationLinkTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PaginationLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Player.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Player.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayerAllOf.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerAllOfTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayerAllOf.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayerAllOfAssets.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerAllOfAssetsTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayerAllOfAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayerCreationPayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerCreationPayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayerCreationPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayerSessionEvent.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerSessionEventTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayerSessionEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayerUpdatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerUpdatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayerUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Playerinput.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayerinputTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Playerinput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/PlayersListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/PlayersListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Quality.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/QualityTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Quality.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/RawStatisticsListLiveStreamAnalyticsResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/RawStatisticsListLiveStreamAnalyticsResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/RawStatisticsListLiveStreamAnalyticsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/RawStatisticsListPlayerSessionEventsResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/RawStatisticsListPlayerSessionEventsResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/RawStatisticsListPlayerSessionEventsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/RawStatisticsListSessionsResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/RawStatisticsListSessionsResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/RawStatisticsListSessionsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/RefreshTokenPayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/RefreshTokenPayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/RefreshTokenPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Subtitle.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/SubtitleTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Subtitle.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/TokenCreatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/TokenCreatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/TokenCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/TokenListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/TokenListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/TokenListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/UploadToken.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/UploadTokenTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/UploadToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Video.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Video.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoAssets.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoAssetsTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoCreatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoCreatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSession.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionClient.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionClientTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionDevice.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionDeviceTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionLocation.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionLocationTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionOs.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionOsTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionOs.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionReferrer.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionReferrerTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSessionSession.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSessionSessionTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSource.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSourceTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSource.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSourceLiveStream.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSourceLiveStreamTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSourceLiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoSourceLiveStreamLink.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoSourceLiveStreamLinkTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoSourceLiveStreamLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoThumbnailPickPayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoThumbnailPickPayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoThumbnailPickPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideoUpdatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideoUpdatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideoUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideosListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideosListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideosListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Videostatus.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideostatusTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Videostatus.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideostatusEncoding.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideostatusEncodingTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideostatusEncoding.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideostatusEncodingMetadata.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideostatusEncodingMetadataTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideostatusEncodingMetadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/VideostatusIngest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/VideostatusIngestTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideostatusIngest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/Webhook.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/WebhookTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/Webhook.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/WebhooksCreatePayload.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/WebhooksCreatePayloadTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/WebhooksCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/WebhooksListResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/com/outmatchapi/apivideo/WebhooksListResponseTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/WebhooksListResponse.md
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/AccountApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/AccountApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/AnalyticsApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/AnalyticsApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/AuthenticationApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/AuthenticationApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/CaptionsApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/CaptionsApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/ChaptersApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/ChaptersApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/LiveApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/LiveApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/PlayersApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/PlayersApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/VideosApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/VideosApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/VideosDelegatedUploadApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/VideosDelegatedUploadApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/apivideo/WebhooksApi.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/test/java/apivideo/WebhooksApiTest.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/docs/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/pom.xml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/build.gradle
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/build.sbt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/settings.gradle
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/gradle.properties
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/AndroidManifest.xml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.travis.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ApiClient.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ServerConfiguration.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ServerVariable.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.github/workflows/maven.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/api/openapi.yaml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/StringUtil.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/auth/HttpBasicAuth.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/auth/HttpBearerAuth.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/auth/ApiKeyAuth.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/gradlew
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/gradlew.bat
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/gradle/wrapper/gradle-wrapper.properties
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/gradle/wrapper/gradle-wrapper.jar
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ApiException.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/Configuration.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/Pair.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/auth/Authentication.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ApiCallback.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ApiResponse.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/JSON.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ProgressRequestBody.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/ProgressResponseBody.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/invalidPackageName/GzipRequestInterceptor.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/src/main/java/com/outmatchapi/apivideo/AbstractOpenApiSchema.java
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-cfad47bd-4ba8-4132-90c3-cfb51faff562FscW2Y/apivideo/java/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
