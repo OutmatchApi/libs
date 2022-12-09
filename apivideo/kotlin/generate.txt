@@ -1,0 +1,353 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: kotlin (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'kotlin' is considered stable.
+[main] INFO  o.o.c.l.AbstractKotlinCodegen - Environment variable KOTLIN_POST_PROCESS_FILE not defined so the Kotlin code may not be properly formatted. To define it, try 'export KOTLIN_POST_PROCESS_FILE="/usr/local/bin/ktlint -F"' (Linux/Mac)
+[main] INFO  o.o.c.l.AbstractKotlinCodegen - NOTE: To enable file post-processing, 'enablePostProcessFile' must be set to `true` (--enable-post-process-file for CLI).
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] WARN  o.o.codegen.DefaultCodegen - allOf with multiple schemas defined. Using only the first one: playerinput
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/AccessMinusToken.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AccessToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Account.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Account.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/AccountQuota.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AccountQuota.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/AuthenticateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AuthenticatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/BadMinusRequest.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/BadRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/BytesRange.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/BytesRange.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/CaptionsMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/CaptionsListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/CaptionsMinusUpdateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/CaptionsUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Chapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Chapter.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/ChaptersMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/ChaptersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Link.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Link.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveMinusStream.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveMinusStreamMinusCreateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveMinusStreamMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveMinusStreamMinusSession.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveMinusStreamMinusUpdateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamAssets.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamSessionClient.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamSessionDevice.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamSessionLocation.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamSessionReferrer.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/LiveStreamSessionSession.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveStreamSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Metadata.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Metadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/NotMinusFound.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/NotFound.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Pagination.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Pagination.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PaginationLink.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PaginationLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Player.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Player.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayerAllOf.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayerAllOf.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayerAllOfAssets.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayerAllOfAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayerCreationPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayerCreationPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayerMinusSessionMinusEvent.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayerSessionEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayerUpdatePayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayerUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Playerinput.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Playerinput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/PlayersMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Quality.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Quality.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/RawMinusStatisticsMinusListMinusLiveMinusStreamMinusAnalyticsMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/RawStatisticsListLiveStreamAnalyticsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/RawMinusStatisticsMinusListMinusPlayerMinusSessionMinusEventsMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/RawStatisticsListPlayerSessionEventsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/RawMinusStatisticsMinusListMinusSessionsMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/RawStatisticsListSessionsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/RefreshMinusTokenMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/RefreshTokenPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Subtitle.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Subtitle.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/TokenMinusCreateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/TokenCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/TokenMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/TokenListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/UploadMinusToken.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/UploadToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Video.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Video.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoAssets.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoMinusCreateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoMinusSession.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoMinusThumbnailMinusPickMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoThumbnailPickPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoMinusUpdateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionClient.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionDevice.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionLocation.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionOs.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionOs.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionReferrer.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSessionSession.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSource.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSource.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSourceLiveStream.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSourceLiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideoSourceLiveStreamLink.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideoSourceLiveStreamLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideosMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideosListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Videostatus.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Videostatus.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideostatusEncoding.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideostatusEncoding.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideostatusEncodingMetadata.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideostatusEncodingMetadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/VideostatusIngest.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideostatusIngest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/Webhook.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/Webhook.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/WebhooksMinusCreateMinusPayload.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/WebhooksCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/com/outmatchapi/apivideo/WebhooksMinusListMinusResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/WebhooksListResponse.md
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/AccountApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/AnalyticsApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/AuthenticationApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/CaptionsApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/ChaptersApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/LiveApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/PlayersApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/VideosApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/VideosDelegatedUploadApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/apis/WebhooksApi.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/docs/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/build.gradle
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/settings.gradle
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/gradlew
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/gradlew.bat
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/gradle/wrapper/gradle-wrapper.properties
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/gradle/wrapper/gradle-wrapper.jar
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/ApiClient.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/ApiAbstractions.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/PartConfig.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/RequestConfig.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/RequestMethod.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/Serializer.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/ByteArrayAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/UUIDAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/LocalDateAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/LocalDateTimeAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/OffsetDateTimeAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/BigDecimalAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/BigIntegerAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/URIAdapter.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/Errors.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/ResponseExtensions.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/src/main/kotlin/apivideo/infrastructure/ApiResponse.kt
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-f6162f7f-99c4-48cb-9a48-f23879c632d2lSOF1q/apivideo/kotlin/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+#                                                                              #
+# This generator's contributed by Jim Schubert (https://github.com/jimschubert)#
+# Please support his work directly via https://patreon.com/jimschubert ?      #
+################################################################################
