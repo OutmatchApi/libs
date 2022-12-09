@@ -1,0 +1,419 @@
+Did set selected version to 6.2.1
+[main] INFO  o.o.codegen.DefaultGenerator - Generating with dryRun=false
+[main] INFO  o.o.c.ignore.CodegenIgnoreProcessor - No .openapi-generator-ignore file found.
+[main] INFO  o.o.codegen.DefaultGenerator - OpenAPI Generator: ruby (client)
+[main] INFO  o.o.codegen.DefaultGenerator - Generator 'ruby' is considered stable.
+[main] INFO  o.o.c.languages.AbstractRubyCodegen - Hint: Environment variable 'RUBY_POST_PROCESS_FILE' (optional) not defined. E.g. to format the source code, please try 'export RUBY_POST_PROCESS_FILE="/usr/local/bin/rubocop -a"' (Linux/Mac)
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] ERROR o.o.codegen.InlineModelResolver - Illegal schema found with $ref combined with other properties, no properties should be defined alongside a $ref:
+ class ObjectSchema {
+    class Schema {
+        type: object
+        format: null
+        $ref: #/components/schemas/video
+        description: null
+        title: null
+        multipleOf: null
+        maximum: null
+        exclusiveMaximum: null
+        minimum: null
+        exclusiveMinimum: null
+        maxLength: null
+        minLength: null
+        pattern: null
+        maxItems: null
+        minItems: null
+        uniqueItems: null
+        maxProperties: null
+        minProperties: null
+        required: null
+        not: null
+        properties: null
+        additionalProperties: null
+        nullable: null
+        readOnly: null
+        writeOnly: null
+        example: null
+        externalDocs: null
+        deprecated: null
+        discriminator: null
+        xml: null
+    }
+}
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as account_quota. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf_assets. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.InlineModelResolver - Inline schema created as player_allOf. To have complete control of the model name, set the `title` field or use the inlineSchemaNameMapping option (--inline-schema-name-mappings in CLI).
+[main] INFO  o.o.codegen.DefaultGenerator - Model captions-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model chapters-update-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model live-stream-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] WARN  o.o.codegen.DefaultCodegen - allOf with multiple schemas defined. Using only the first one: playerinput
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: null. Title: null
+[main] INFO  o.o.codegen.DefaultGenerator - Model players-upload-logo-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model token-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-thumbnail-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.DefaultGenerator - Model video-upload-payload not generated since it's marked as unused (due to form parameters) and `skipFormModel` (global property) set to true (default)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/access_token.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/access_token_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AccessToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/account.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/account_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Account.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/account_quota.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/account_quota_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AccountQuota.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/authenticate_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/authenticate_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AuthenticatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/bad_request.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/bad_request_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/BadRequest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/bytes_range.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/bytes_range_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/BytesRange.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/captions_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/captions_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/CaptionsListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/captions_update_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/captions_update_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/CaptionsUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/chapter.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/chapter_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Chapter.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/chapters_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/chapters_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/ChaptersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/link.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/link_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Link.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_assets.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_assets_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_create_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_create_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session_client.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_client_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session_device.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_device_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session_location.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_location_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session_referrer.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_referrer_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_session_session.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_session_session_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/live_stream_update_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/live_stream_update_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveStreamUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/metadata.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/metadata_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Metadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/not_found.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/not_found_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/NotFound.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/pagination.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/pagination_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Pagination.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/pagination_link.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/pagination_link_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PaginationLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Player.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player_all_of.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_all_of_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayerAllOf.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player_all_of_assets.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_all_of_assets_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayerAllOfAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player_creation_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_creation_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayerCreationPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player_session_event.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_session_event_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayerSessionEvent.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/player_update_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/player_update_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayerUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/playerinput.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/playerinput_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Playerinput.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/players_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/players_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayersListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/quality.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/quality_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Quality.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/raw_statistics_list_live_stream_analytics_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/raw_statistics_list_live_stream_analytics_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/RawStatisticsListLiveStreamAnalyticsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/raw_statistics_list_player_session_events_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/raw_statistics_list_player_session_events_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/RawStatisticsListPlayerSessionEventsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/raw_statistics_list_sessions_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/raw_statistics_list_sessions_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/RawStatisticsListSessionsResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/refresh_token_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/refresh_token_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/RefreshTokenPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/subtitle.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/subtitle_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Subtitle.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/token_create_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/token_create_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/TokenCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/token_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/token_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/TokenListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/upload_token.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/upload_token_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/UploadToken.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Video.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_assets.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_assets_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoAssets.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_create_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_create_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_client.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_client_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionClient.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_device.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_device_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionDevice.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_location.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_location_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionLocation.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_os.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_os_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionOs.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_referrer.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_referrer_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionReferrer.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_session_session.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_session_session_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSessionSession.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_source.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_source_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSource.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_source_live_stream.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_source_live_stream_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSourceLiveStream.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_source_live_stream_link.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_source_live_stream_link_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoSourceLiveStreamLink.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_thumbnail_pick_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_thumbnail_pick_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoThumbnailPickPayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/video_update_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/video_update_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideoUpdatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/videos_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/videos_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideosListResponse.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/videostatus.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/videostatus_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Videostatus.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/videostatus_encoding.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/videostatus_encoding_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideostatusEncoding.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/videostatus_encoding_metadata.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/videostatus_encoding_metadata_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideostatusEncodingMetadata.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/videostatus_ingest.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/videostatus_ingest_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideostatusIngest.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/webhook.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/webhook_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/Webhook.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/webhooks_create_payload.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/webhooks_create_payload_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/WebhooksCreatePayload.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/models/webhooks_list_response.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/models/webhooks_list_response_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/WebhooksListResponse.md
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerCreationPayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.utils.ModelUtils - [deprecated] inheritance without use of 'discriminator.propertyName' has been deprecated in the 5.x release. Composed schema name: playerUpdatePayload. Title: null
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/account_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/account_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AccountApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/analytics_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/analytics_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AnalyticsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/authentication_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/authentication_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/AuthenticationApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/captions_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/captions_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/CaptionsApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/chapters_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/chapters_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/ChaptersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/live_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/live_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/LiveApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/players_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/players_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/PlayersApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/videos_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/videos_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideosApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/videos_delegated_upload_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/videos_delegated_upload_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/VideosDelegatedUploadApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api/webhooks_api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api/webhooks_api_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/docs/WebhooksApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api_error.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/version.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/Rakefile
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/Gemfile
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.rubocop.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.travis.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.gitlab-ci.yml
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/video-api.gemspec
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/configuration.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/lib/video-api/api_client.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.rspec
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/spec_helper.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/configuration_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/spec/api_client_spec.rb
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.openapi-generator-ignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c819dbd4-310b-4281-991b-a824e991c05fj14ufg/video-api/ruby/.openapi-generator/FILES
+################################################################################
+# Thanks for using OpenAPI Generator.                                          #
+# Please consider donation to help us maintain this project ?                 #
+# https://opencollective.com/openapi_generator/donate                          #
+################################################################################
