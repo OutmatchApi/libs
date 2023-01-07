@@ -1,6 +1,6 @@
 {
     "name": "@apilibraries/paymefunnelapi",
-    "version": "0.0.45",
+    "version": "0.0.46",
     "description": "OpenAPI client for @apilibraries/paymefunnelapi",
     "author": "paymefunnelapi",
     "repository": "https://github.com/api-client-libraries/libs/tree/main/paymefunnelapi/typescript",

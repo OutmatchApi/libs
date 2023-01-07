@@ -29,7 +29,8 @@ let body:.UserApiCreateUserRequest = {
     email: "john@email.com",
     firstName: "John",
     lastName: "James",
-    company: "My Company",
+    instagram: "@myIgHandle",
+    tiktok: "@myTikTokHandle",
   },
 };
 
@@ -88,7 +89,8 @@ let body:.UserApiUpdateUserRequest = {
   updateUserRequest: {
     firstName: "John",
     lastName: "James",
-    company: "My Company",
+    instagram: "@myIgHandle",
+    tiktok: "@myTikTokHandle",
   },
 };
 
