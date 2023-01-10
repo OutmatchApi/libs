@@ -16,6 +16,7 @@ middleware.ts
 models/CreateUserRequest.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
+models/StripeLinkedAccount.ts
 models/UpdateUserRequest.ts
 models/User.ts
 models/all.ts

@@ -1,10 +1,12 @@
 export * from '../models/CreateUserRequest';
 export * from '../models/ModelError';
+export * from '../models/StripeLinkedAccount';
 export * from '../models/UpdateUserRequest';
 export * from '../models/User';
 
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { ModelError } from '../models/ModelError';
+import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 
@@ -33,6 +35,7 @@ let enumsMap: Set<string> = new Set<string>([
 let typeMap: {[index: string]: any} = {
     "CreateUserRequest": CreateUserRequest,
     "ModelError": ModelError,
+    "StripeLinkedAccount": StripeLinkedAccount,
     "UpdateUserRequest": UpdateUserRequest,
     "User": User,
 }

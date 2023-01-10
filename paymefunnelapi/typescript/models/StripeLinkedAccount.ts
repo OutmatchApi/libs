@@ -12,49 +12,35 @@
 
 import { HttpFile } from '../http/http';
 
-export class CreateUserRequest {
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+export class StripeLinkedAccount {
+    'created': number;
+    'expiresAt': number;
+    'url': string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "email",
-            "baseName": "email",
-            "type": "string",
+            "name": "created",
+            "baseName": "created",
+            "type": "number",
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
-            "type": "string",
+            "name": "expiresAt",
+            "baseName": "expires_at",
+            "type": "number",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
+            "name": "url",
+            "baseName": "url",
             "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateUserRequest.attributeTypeMap;
+        return StripeLinkedAccount.attributeTypeMap;
     }
 
     public constructor() {

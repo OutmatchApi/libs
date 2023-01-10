@@ -3,6 +3,7 @@ import { Configuration} from '../configuration'
 
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { ModelError } from '../models/ModelError';
+import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 import { ObservableStatusApi } from './ObservableAPI';
@@ -63,6 +64,15 @@ export class PromiseUserApi {
      */
     public updateUser(updateUserRequest?: UpdateUserRequest, _options?: Configuration): Promise<void> {
         const result = this.api.updateUser(updateUserRequest, _options);
+        return result.toPromise();
+    }
+
+    /**
+     * This can only be done by the logged in user.
+     * Update user's stripe account
+     */
+    public userConnectStripe(_options?: Configuration): Promise<StripeLinkedAccount> {
+        const result = this.api.userConnectStripe(_options);
         return result.toPromise();
     }
 

@@ -1,13 +1,13 @@
-## @apilibraries/paymefunnelapi@0.0.46
+## @apilibraries/paymefunnelapi@0.0.47
 
 ### Install
 
 ```
-npm install @apilibraries/paymefunnelapi@0.0.46 --save
+npm install @apilibraries/paymefunnelapi@0.0.47 --save
 
 // Or with yarn
 
-yarn add @apilibraries/paymefunnelapi@0.0.46
+yarn add @apilibraries/paymefunnelapi@0.0.47
 
 ```
 
@@ -33,4 +33,5 @@ Class | Method | HTTP request | Description
 *StatusApi* | [**getStatus**](StatusApi.md#getstatus) | **GET** /status | 
 *UserApi* | [**createUser**](UserApi.md#createuser) | **POST** /user | Create user
 *UserApi* | [**updateUser**](UserApi.md#updateuser) | **PUT** /user | Update user
+*UserApi* | [**userConnectStripe**](UserApi.md#userconnectstripe) | **GET** /user/connectStripe | Update user&#39;s stripe account
 

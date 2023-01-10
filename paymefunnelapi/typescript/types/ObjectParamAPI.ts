@@ -3,6 +3,7 @@ import { Configuration} from '../configuration'
 
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { ModelError } from '../models/ModelError';
+import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 
@@ -50,6 +51,9 @@ export interface UserApiUpdateUserRequest {
     updateUserRequest?: UpdateUserRequest
 }
 
+export interface UserApiUserConnectStripeRequest {
+}
+
 export class ObjectUserApi {
     private api: ObservableUserApi
 
@@ -73,6 +77,15 @@ export class ObjectUserApi {
      */
     public updateUser(param: UserApiUpdateUserRequest = {}, options?: Configuration): Promise<void> {
         return this.api.updateUser(param.updateUserRequest,  options).toPromise();
+    }
+
+    /**
+     * This can only be done by the logged in user.
+     * Update user's stripe account
+     * @param param the request object
+     */
+    public userConnectStripe(param: UserApiUserConnectStripeRequest = {}, options?: Configuration): Promise<StripeLinkedAccount> {
+        return this.api.userConnectStripe( options).toPromise();
     }
 
 }
