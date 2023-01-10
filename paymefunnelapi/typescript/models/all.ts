@@ -1,5 +1,7 @@
 export * from '../models/CreateUserRequest'
 export * from '../models/ModelError'
+export * from '../models/StripeAccount'
+export * from '../models/StripeIntegration'
 export * from '../models/StripeLinkedAccount'
 export * from '../models/UpdateUserRequest'
 export * from '../models/User'

@@ -12,13 +12,13 @@
 
 import { HttpFile } from '../http/http';
 
-export class User {
-    'id': string;
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram'?: string;
-    'tiktok'?: string;
+export class StripeAccount {
+    'id'?: string;
+    'payoutsEnabled'?: boolean;
+    'created'?: number;
+    'chargesEnabled'?: boolean;
+    'email'?: string;
+    'detailsSubmitted'?: boolean;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -27,7 +27,25 @@ export class User {
             "name": "id",
             "baseName": "id",
             "type": "string",
-            "format": "string"
+            "format": ""
+        },
+        {
+            "name": "payoutsEnabled",
+            "baseName": "payouts_enabled",
+            "type": "boolean",
+            "format": ""
+        },
+        {
+            "name": "created",
+            "baseName": "created",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "chargesEnabled",
+            "baseName": "charges_enabled",
+            "type": "boolean",
+            "format": ""
         },
         {
             "name": "email",
@@ -36,32 +54,14 @@ export class User {
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "lastName",
-            "baseName": "lastName",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
-            "type": "string",
+            "name": "detailsSubmitted",
+            "baseName": "details_submitted",
+            "type": "boolean",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return User.attributeTypeMap;
+        return StripeAccount.attributeTypeMap;
     }
 
     public constructor() {

@@ -10,37 +10,24 @@
  * Do not edit the class manually.
  */
 
+import { StripeAccount } from '../models/StripeAccount';
 import { HttpFile } from '../http/http';
 
-export class StripeLinkedAccount {
-    'created': number;
-    'expiresAt': number;
-    'url': string;
+export class StripeIntegration {
+    'account'?: StripeAccount;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "created",
-            "baseName": "created",
-            "type": "number",
-            "format": ""
-        },
-        {
-            "name": "expiresAt",
-            "baseName": "expires_at",
-            "type": "number",
-            "format": ""
-        },
-        {
-            "name": "url",
-            "baseName": "url",
-            "type": "string",
+            "name": "account",
+            "baseName": "account",
+            "type": "StripeAccount",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return StripeLinkedAccount.attributeTypeMap;
+        return StripeIntegration.attributeTypeMap;
     }
 
     public constructor() {
