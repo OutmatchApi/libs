@@ -1,6 +1,7 @@
 import { ResponseContext, RequestContext, HttpFile } from '../http/http';
 import { Configuration} from '../configuration'
 
+import { Asset } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { ModelError } from '../models/ModelError';
 import { StripeAccount } from '../models/StripeAccount';

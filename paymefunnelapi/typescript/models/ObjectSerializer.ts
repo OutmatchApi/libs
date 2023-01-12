@@ -1,3 +1,4 @@
+export * from '../models/Asset';
 export * from '../models/CreateUserRequest';
 export * from '../models/ModelError';
 export * from '../models/StripeAccount';
@@ -6,6 +7,7 @@ export * from '../models/StripeLinkedAccount';
 export * from '../models/UpdateUserRequest';
 export * from '../models/User';
 
+import { Asset   , AssetTypeEnum     } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { ModelError } from '../models/ModelError';
 import { StripeAccount } from '../models/StripeAccount';
@@ -34,9 +36,11 @@ const supportedMediaTypes: { [mediaType: string]: number } = {
 
 
 let enumsMap: Set<string> = new Set<string>([
+    "AssetTypeEnum",
 ]);
 
 let typeMap: {[index: string]: any} = {
+    "Asset": Asset,
     "CreateUserRequest": CreateUserRequest,
     "ModelError": ModelError,
     "StripeAccount": StripeAccount,

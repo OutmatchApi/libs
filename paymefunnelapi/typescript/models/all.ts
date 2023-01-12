@@ -1,3 +1,4 @@
+export * from '../models/Asset'
 export * from '../models/CreateUserRequest'
 export * from '../models/ModelError'
 export * from '../models/StripeAccount'

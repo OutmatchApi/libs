@@ -12,52 +12,62 @@
 
 import { HttpFile } from '../http/http';
 
-export class CreateUserRequest {
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+export class Asset {
+    'id': string;
+    'name': string;
+    'expiry': number;
+    'type': AssetTypeEnum;
+    'storageRef': string;
+    'bucketName': string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "email",
-            "baseName": "email",
+            "name": "id",
+            "baseName": "id",
             "type": "string",
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
+            "name": "name",
+            "baseName": "name",
             "type": "string",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
+            "name": "expiry",
+            "baseName": "expiry",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "type",
+            "baseName": "type",
+            "type": "AssetTypeEnum",
+            "format": ""
+        },
+        {
+            "name": "storageRef",
+            "baseName": "storageRef",
             "type": "string",
             "format": ""
         },
         {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
+            "name": "bucketName",
+            "baseName": "bucketName",
             "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateUserRequest.attributeTypeMap;
+        return Asset.attributeTypeMap;
     }
 
     public constructor() {
     }
 }
+
+
+export type AssetTypeEnum = "IMAGE" | "VIDEO" | "PDF" ;
 

@@ -13,6 +13,7 @@ http/http.ts
 http/isomorphic-fetch.ts
 index.ts
 middleware.ts
+models/Asset.ts
 models/CreateUserRequest.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
