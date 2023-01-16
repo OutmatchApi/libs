@@ -4,12 +4,57 @@ import { Observable, of, from } from '../rxjsStub';
 import {mergeMap, map} from  '../rxjsStub';
 import { Asset } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
+import { Funnel } from '../models/Funnel';
+import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
+import { FunnelMetadata } from '../models/FunnelMetadata';
 import { ModelError } from '../models/ModelError';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+
+import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
+export class ObservableFunnelApi {
+    private requestFactory: FunnelApiRequestFactory;
+    private responseProcessor: FunnelApiResponseProcessor;
+    private configuration: Configuration;
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: FunnelApiRequestFactory,
+        responseProcessor?: FunnelApiResponseProcessor
+    ) {
+        this.configuration = configuration;
+        this.requestFactory = requestFactory || new FunnelApiRequestFactory(configuration);
+        this.responseProcessor = responseProcessor || new FunnelApiResponseProcessor();
+    }
+
+    /**
+     * create a new funnel
+     * 
+     * @param funnelCreateRequest 
+     */
+    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Observable<Funnel> {
+        const requestContextPromise = this.requestFactory.funnelCreate(funnelCreateRequest, _options);
+
+        // build promise chain
+        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
+        for (let middleware of this.configuration.middleware) {
+            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
+        }
+
+        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
+            pipe(mergeMap((response: ResponseContext) => {
+                let middlewarePostObservable = of(response);
+                for (let middleware of this.configuration.middleware) {
+                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
+                }
+                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.funnelCreate(rsp)));
+            }));
+    }
+
+}
 
 import { StatusApiRequestFactory, StatusApiResponseProcessor} from "../apis/StatusApi";
 export class ObservableStatusApi {

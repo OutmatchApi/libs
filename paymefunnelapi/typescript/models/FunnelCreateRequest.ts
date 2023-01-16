@@ -12,49 +12,56 @@
 
 import { HttpFile } from '../http/http';
 
-export class CreateUserRequest {
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+export class FunnelCreateRequest {
+    'coverPhotoAssetId'?: string;
+    'profilePhotoAssetId'?: string;
+    'message'?: string;
+    'assetIds'?: Array<string>;
+    'expiry'?: number;
+    'name'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "email",
-            "baseName": "email",
+            "name": "coverPhotoAssetId",
+            "baseName": "coverPhotoAssetId",
             "type": "string",
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
+            "name": "profilePhotoAssetId",
+            "baseName": "profilePhotoAssetId",
             "type": "string",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
+            "name": "message",
+            "baseName": "message",
             "type": "string",
             "format": ""
         },
         {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
+            "name": "assetIds",
+            "baseName": "assetIds",
+            "type": "Array<string>",
             "format": ""
         },
         {
-            "name": "tiktok",
-            "baseName": "tiktok",
+            "name": "expiry",
+            "baseName": "expiry",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "name",
+            "baseName": "name",
             "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateUserRequest.attributeTypeMap;
+        return FunnelCreateRequest.attributeTypeMap;
     }
 
     public constructor() {

@@ -3,12 +3,44 @@ import { Configuration} from '../configuration'
 
 import { Asset } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
+import { Funnel } from '../models/Funnel';
+import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
+import { FunnelMetadata } from '../models/FunnelMetadata';
 import { ModelError } from '../models/ModelError';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+import { ObservableFunnelApi } from './ObservableAPI';
+
+import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
+export class PromiseFunnelApi {
+    private api: ObservableFunnelApi
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: FunnelApiRequestFactory,
+        responseProcessor?: FunnelApiResponseProcessor
+    ) {
+        this.api = new ObservableFunnelApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * create a new funnel
+     * 
+     * @param funnelCreateRequest 
+     */
+    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
+        const result = this.api.funnelCreate(funnelCreateRequest, _options);
+        return result.toPromise();
+    }
+
+
+}
+
+
+
 import { ObservableStatusApi } from './ObservableAPI';
 
 import { StatusApiRequestFactory, StatusApiResponseProcessor} from "../apis/StatusApi";

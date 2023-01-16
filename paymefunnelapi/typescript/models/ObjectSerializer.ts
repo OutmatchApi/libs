@@ -1,5 +1,8 @@
 export * from '../models/Asset';
 export * from '../models/CreateUserRequest';
+export * from '../models/Funnel';
+export * from '../models/FunnelCreateRequest';
+export * from '../models/FunnelMetadata';
 export * from '../models/ModelError';
 export * from '../models/StripeAccount';
 export * from '../models/StripeIntegration';
@@ -9,6 +12,9 @@ export * from '../models/User';
 
 import { Asset   , AssetTypeEnum     } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
+import { Funnel } from '../models/Funnel';
+import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
+import { FunnelMetadata } from '../models/FunnelMetadata';
 import { ModelError } from '../models/ModelError';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
@@ -42,6 +48,9 @@ let enumsMap: Set<string> = new Set<string>([
 let typeMap: {[index: string]: any} = {
     "Asset": Asset,
     "CreateUserRequest": CreateUserRequest,
+    "Funnel": Funnel,
+    "FunnelCreateRequest": FunnelCreateRequest,
+    "FunnelMetadata": FunnelMetadata,
     "ModelError": ModelError,
     "StripeAccount": StripeAccount,
     "StripeIntegration": StripeIntegration,

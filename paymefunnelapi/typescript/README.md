@@ -1,13 +1,13 @@
-## @apilibraries/paymefunnelapi@0.0.49
+## @apilibraries/paymefunnelapi@0.0.50
 
 ### Install
 
 ```
-npm install @apilibraries/paymefunnelapi@0.0.49 --save
+npm install @apilibraries/paymefunnelapi@0.0.50 --save
 
 // Or with yarn
 
-yarn add @apilibraries/paymefunnelapi@0.0.49
+yarn add @apilibraries/paymefunnelapi@0.0.50
 
 ```
 
@@ -30,6 +30,7 @@ All URIs are relative to *https://www.PayMeFunnel.com/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*FunnelApi* | [**funnelCreate**](FunnelApi.md#funnelcreate) | **POST** /funnel | 
 *StatusApi* | [**getStatus**](StatusApi.md#getstatus) | **GET** /status | 
 *UserApi* | [**createUser**](UserApi.md#createuser) | **POST** /user | Create user
 *UserApi* | [**updateUser**](UserApi.md#updateuser) | **PUT** /user | Update user

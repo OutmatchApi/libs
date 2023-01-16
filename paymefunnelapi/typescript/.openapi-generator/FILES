@@ -1,7 +1,9 @@
 .gitignore
+FunnelApi.md
 README.md
 StatusApi.md
 UserApi.md
+apis/FunnelApi.ts
 apis/StatusApi.ts
 apis/UserApi.ts
 apis/baseapi.ts
@@ -15,6 +17,9 @@ index.ts
 middleware.ts
 models/Asset.ts
 models/CreateUserRequest.ts
+models/Funnel.ts
+models/FunnelCreateRequest.ts
+models/FunnelMetadata.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
 models/StripeAccount.ts

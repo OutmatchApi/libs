@@ -10,51 +10,45 @@
  * Do not edit the class manually.
  */
 
+import { FunnelMetadata } from '../models/FunnelMetadata';
 import { HttpFile } from '../http/http';
 
-export class CreateUserRequest {
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+export class Funnel {
+    'id': string;
+    'name': string;
+    'expiry': number;
+    'metadata': FunnelMetadata;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "email",
-            "baseName": "email",
+            "name": "id",
+            "baseName": "id",
             "type": "string",
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
+            "name": "name",
+            "baseName": "name",
             "type": "string",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
-            "type": "string",
+            "name": "expiry",
+            "baseName": "expiry",
+            "type": "number",
             "format": ""
         },
         {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
-            "type": "string",
+            "name": "metadata",
+            "baseName": "metadata",
+            "type": "FunnelMetadata",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateUserRequest.attributeTypeMap;
+        return Funnel.attributeTypeMap;
     }
 
     public constructor() {
