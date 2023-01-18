@@ -33,6 +33,7 @@ let body:.FunnelApiFunnelCreateRequest = {
     ],
     expiry: 3.14,
     name: "name_example",
+    completionMessage: "completionMessage_example",
   },
 };
 
@@ -67,6 +68,7 @@ Name | Type | Description  | Notes
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **201** | Created |  -  |
+**400** | Bad Request |  -  |
 **404** | Not Found |  -  |
 **409** | Conflict |  -  |
 

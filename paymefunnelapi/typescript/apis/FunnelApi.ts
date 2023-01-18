@@ -9,6 +9,7 @@ import {SecurityAuthentication} from '../auth/auth';
 
 
 import { Funnel } from '../models/Funnel';
+import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 
 /**
@@ -78,6 +79,13 @@ export class FunnelApiResponseProcessor {
                 "Funnel", ""
             ) as Funnel;
             return body;
+        }
+        if (isCodeInRange("400", response.httpStatusCode)) {
+            const body: FunnelCreate400Response = ObjectSerializer.deserialize(
+                ObjectSerializer.parse(await response.body.text(), contentType),
+                "FunnelCreate400Response", ""
+            ) as FunnelCreate400Response;
+            throw new ApiException<FunnelCreate400Response>(response.httpStatusCode, "Bad Request", body, response.headers);
         }
         if (isCodeInRange("404", response.httpStatusCode)) {
             throw new ApiException<undefined>(response.httpStatusCode, "Not Found", undefined, response.headers);

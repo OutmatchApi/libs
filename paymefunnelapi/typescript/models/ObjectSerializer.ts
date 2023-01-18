@@ -1,6 +1,7 @@
 export * from '../models/Asset';
 export * from '../models/CreateUserRequest';
 export * from '../models/Funnel';
+export * from '../models/FunnelCreate400Response';
 export * from '../models/FunnelCreateRequest';
 export * from '../models/FunnelMetadata';
 export * from '../models/ModelError';
@@ -10,9 +11,10 @@ export * from '../models/StripeLinkedAccount';
 export * from '../models/UpdateUserRequest';
 export * from '../models/User';
 
-import { Asset   , AssetTypeEnum     } from '../models/Asset';
+import { Asset   , AssetTypeEnum      } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Funnel } from '../models/Funnel';
+import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
 import { ModelError } from '../models/ModelError';
@@ -49,6 +51,7 @@ let typeMap: {[index: string]: any} = {
     "Asset": Asset,
     "CreateUserRequest": CreateUserRequest,
     "Funnel": Funnel,
+    "FunnelCreate400Response": FunnelCreate400Response,
     "FunnelCreateRequest": FunnelCreateRequest,
     "FunnelMetadata": FunnelMetadata,
     "ModelError": ModelError,

@@ -18,6 +18,7 @@ middleware.ts
 models/Asset.ts
 models/CreateUserRequest.ts
 models/Funnel.ts
+models/FunnelCreate400Response.ts
 models/FunnelCreateRequest.ts
 models/FunnelMetadata.ts
 models/ModelError.ts

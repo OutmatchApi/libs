@@ -10,24 +10,23 @@
  * Do not edit the class manually.
  */
 
-import { StripeAccount } from '../models/StripeAccount';
 import { HttpFile } from '../http/http';
 
-export class StripeIntegration {
-    'account'?: StripeAccount;
+export class FunnelCreate400Response {
+    'message': string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "account",
-            "baseName": "account",
-            "type": "StripeAccount",
+            "name": "message",
+            "baseName": "message",
+            "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return StripeIntegration.attributeTypeMap;
+        return FunnelCreate400Response.attributeTypeMap;
     }
 
     public constructor() {

@@ -1,6 +1,7 @@
 export * from '../models/Asset'
 export * from '../models/CreateUserRequest'
 export * from '../models/Funnel'
+export * from '../models/FunnelCreate400Response'
 export * from '../models/FunnelCreateRequest'
 export * from '../models/FunnelMetadata'
 export * from '../models/ModelError'

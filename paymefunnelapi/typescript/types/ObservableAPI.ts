@@ -5,6 +5,7 @@ import {mergeMap, map} from  '../rxjsStub';
 import { Asset } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
 import { Funnel } from '../models/Funnel';
+import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
 import { ModelError } from '../models/ModelError';
