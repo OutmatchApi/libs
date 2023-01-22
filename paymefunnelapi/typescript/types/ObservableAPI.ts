@@ -36,7 +36,7 @@ export class ObservableDefaultApi {
     /**
      * Get funnel by id
      * 
-     * @param funnelId The funnel id
+     * @param funnelId the funnel id
      * @param sessionId The payment session id
      */
     public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Observable<FunnelMetadataPublic> {
@@ -79,11 +79,10 @@ export class ObservableFunnelApi {
     /**
      * create a new funnel
      * 
-     * @param funnelId The funnel id
      * @param funnelCreateRequest 
      */
-    public funnelCreate(funnelId: string, funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Observable<Funnel> {
-        const requestContextPromise = this.requestFactory.funnelCreate(funnelId, funnelCreateRequest, _options);
+    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Observable<Funnel> {
+        const requestContextPromise = this.requestFactory.funnelCreate(funnelCreateRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);

@@ -4,7 +4,7 @@ All URIs are relative to *https://www.PayMeFunnel.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getFunnel**](DefaultApi.md#getFunnel) | **GET** /funnel/{funnel_id} | 
+[**getFunnel**](DefaultApi.md#getFunnel) | **GET** /publicfunnel/{funnel_id} | 
 
 
 # **getFunnel**
@@ -23,7 +23,7 @@ const configuration = .createConfiguration();
 const apiInstance = new .DefaultApi(configuration);
 
 let body:.DefaultApiGetFunnelRequest = {
-  // string | The funnel id
+  // string | the funnel id
   funnelId: "funnel_id_example",
   // string | The payment session id (optional)
   sessionId: "session_id_example",
@@ -39,7 +39,7 @@ apiInstance.getFunnel(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **funnelId** | [**string**] | The funnel id | defaults to undefined
+ **funnelId** | [**string**] | the funnel id | defaults to undefined
  **sessionId** | [**string**] | The payment session id | (optional) defaults to undefined
 
 

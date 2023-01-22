@@ -32,7 +32,7 @@ export class PromiseDefaultApi {
     /**
      * Get funnel by id
      * 
-     * @param funnelId The funnel id
+     * @param funnelId the funnel id
      * @param sessionId The payment session id
      */
     public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Promise<FunnelMetadataPublic> {
@@ -62,11 +62,10 @@ export class PromiseFunnelApi {
     /**
      * create a new funnel
      * 
-     * @param funnelId The funnel id
      * @param funnelCreateRequest 
      */
-    public funnelCreate(funnelId: string, funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
-        const result = this.api.funnelCreate(funnelId, funnelCreateRequest, _options);
+    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
+        const result = this.api.funnelCreate(funnelCreateRequest, _options);
         return result.toPromise();
     }
 

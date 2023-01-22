@@ -18,7 +18,7 @@ export class DefaultApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * Get funnel by id
      * 
-     * @param funnelId The funnel id
+     * @param funnelId the funnel id
      * @param sessionId The payment session id
      */
     public async getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Promise<RequestContext> {
@@ -32,7 +32,7 @@ export class DefaultApiRequestFactory extends BaseAPIRequestFactory {
 
 
         // Path Params
-        const localVarPath = '/funnel/{funnel_id}'
+        const localVarPath = '/publicfunnel/{funnel_id}'
             .replace('{' + 'funnel_id' + '}', encodeURIComponent(String(funnelId)));
 
         // Make Request Context

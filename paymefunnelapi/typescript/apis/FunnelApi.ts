@@ -20,22 +20,14 @@ export class FunnelApiRequestFactory extends BaseAPIRequestFactory {
     /**
      * create a new funnel
      * 
-     * @param funnelId The funnel id
      * @param funnelCreateRequest 
      */
-    public async funnelCreate(funnelId: string, funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<RequestContext> {
+    public async funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<RequestContext> {
         let _config = _options || this.configuration;
-
-        // verify required parameter 'funnelId' is not null or undefined
-        if (funnelId === null || funnelId === undefined) {
-            throw new RequiredError("FunnelApi", "funnelCreate", "funnelId");
-        }
-
 
 
         // Path Params
-        const localVarPath = '/funnel/{funnel_id}'
-            .replace('{' + 'funnel_id' + '}', encodeURIComponent(String(funnelId)));
+        const localVarPath = '/funnel';
 
         // Make Request Context
         const requestContext = _config.baseServer.makeRequestContext(localVarPath, HttpMethod.POST);

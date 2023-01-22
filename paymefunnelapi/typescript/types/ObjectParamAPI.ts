@@ -21,7 +21,7 @@ import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/De
 
 export interface DefaultApiGetFunnelRequest {
     /**
-     * The funnel id
+     * the funnel id
      * @type string
      * @memberof DefaultApigetFunnel
      */
@@ -57,12 +57,6 @@ import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/Funn
 
 export interface FunnelApiFunnelCreateRequest {
     /**
-     * The funnel id
-     * @type string
-     * @memberof FunnelApifunnelCreate
-     */
-    funnelId: string
-    /**
      * 
      * @type FunnelCreateRequest
      * @memberof FunnelApifunnelCreate
@@ -82,8 +76,8 @@ export class ObjectFunnelApi {
      * 
      * @param param the request object
      */
-    public funnelCreate(param: FunnelApiFunnelCreateRequest, options?: Configuration): Promise<Funnel> {
-        return this.api.funnelCreate(param.funnelId, param.funnelCreateRequest,  options).toPromise();
+    public funnelCreate(param: FunnelApiFunnelCreateRequest = {}, options?: Configuration): Promise<Funnel> {
+        return this.api.funnelCreate(param.funnelCreateRequest,  options).toPromise();
     }
 
 }

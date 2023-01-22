@@ -4,7 +4,7 @@ All URIs are relative to *https://www.PayMeFunnel.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**funnelCreate**](FunnelApi.md#funnelCreate) | **POST** /funnel/{funnel_id} | 
+[**funnelCreate**](FunnelApi.md#funnelCreate) | **POST** /funnel | 
 
 
 # **funnelCreate**
@@ -23,8 +23,6 @@ const configuration = .createConfiguration();
 const apiInstance = new .FunnelApi(configuration);
 
 let body:.FunnelApiFunnelCreateRequest = {
-  // string | The funnel id
-  funnelId: "funnel_id_example",
   // FunnelCreateRequest (optional)
   funnelCreateRequest: {
     coverPhotoAssetId: "coverPhotoAssetId_example",
@@ -50,7 +48,6 @@ apiInstance.funnelCreate(body).then((data:any) => {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **funnelCreateRequest** | **FunnelCreateRequest**|  |
- **funnelId** | [**string**] | The funnel id | defaults to undefined
 
 
 ### Return type
