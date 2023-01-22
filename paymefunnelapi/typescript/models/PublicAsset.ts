@@ -12,42 +12,45 @@
 
 import { HttpFile } from '../http/http';
 
-export class UpdateUserRequest {
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+/**
+* an asset that is publicly visible (to show funnel)
+*/
+export class PublicAsset {
+    'url': string;
+    'expiry': number;
+    'previewUrl'?: string;
+    'blurredUrl'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "firstName",
-            "baseName": "firstName",
+            "name": "url",
+            "baseName": "url",
             "type": "string",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
+            "name": "expiry",
+            "baseName": "expiry",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "previewUrl",
+            "baseName": "previewUrl",
             "type": "string",
             "format": ""
         },
         {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
+            "name": "blurredUrl",
+            "baseName": "blurredUrl",
             "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return UpdateUserRequest.attributeTypeMap;
+        return PublicAsset.attributeTypeMap;
     }
 
     public constructor() {

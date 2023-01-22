@@ -9,7 +9,7 @@ import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
 import { FunnelMetadataPublic } from '../models/FunnelMetadataPublic';
 import { ModelError } from '../models/ModelError';
-import { PublicAssert } from '../models/PublicAssert';
+import { PublicAsset } from '../models/PublicAsset';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';

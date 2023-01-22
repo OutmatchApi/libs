@@ -26,7 +26,7 @@ models/FunnelMetadata.ts
 models/FunnelMetadataPublic.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
-models/PublicAssert.ts
+models/PublicAsset.ts
 models/StripeAccount.ts
 models/StripeIntegration.ts
 models/StripeLinkedAccount.ts
