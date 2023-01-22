@@ -13,7 +13,7 @@ export * from '../models/User';
 
 import { Asset   , AssetTypeEnum      } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
-import { Funnel } from '../models/Funnel';
+import { Funnel    , FunnelTypeEnum   } from '../models/Funnel';
 import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
@@ -45,6 +45,7 @@ const supportedMediaTypes: { [mediaType: string]: number } = {
 
 let enumsMap: Set<string> = new Set<string>([
     "AssetTypeEnum",
+    "FunnelTypeEnum",
 ]);
 
 let typeMap: {[index: string]: any} = {
