@@ -12,49 +12,45 @@
 
 import { HttpFile } from '../http/http';
 
-export class CreateUserRequest {
-    'email': string;
-    'firstName': string;
-    'lastName': string;
-    'instagram': string;
-    'tiktok': string;
+/**
+* an asset that is publicly visible (to show funnel)
+*/
+export class PublicAssert {
+    'url': string;
+    'expiry': number;
+    'previewUrl'?: string;
+    'blurredUrl'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "email",
-            "baseName": "email",
+            "name": "url",
+            "baseName": "url",
             "type": "string",
             "format": ""
         },
         {
-            "name": "firstName",
-            "baseName": "firstName",
+            "name": "expiry",
+            "baseName": "expiry",
+            "type": "number",
+            "format": ""
+        },
+        {
+            "name": "previewUrl",
+            "baseName": "previewUrl",
             "type": "string",
             "format": ""
         },
         {
-            "name": "lastName",
-            "baseName": "lastName",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "instagram",
-            "baseName": "instagram",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "tiktok",
-            "baseName": "tiktok",
+            "name": "blurredUrl",
+            "baseName": "blurredUrl",
             "type": "string",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return CreateUserRequest.attributeTypeMap;
+        return PublicAssert.attributeTypeMap;
     }
 
     public constructor() {

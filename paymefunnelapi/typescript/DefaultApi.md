@@ -1,16 +1,16 @@
-# .FunnelApi
+# .DefaultApi
 
 All URIs are relative to *https://www.PayMeFunnel.com/api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**funnelCreate**](FunnelApi.md#funnelCreate) | **POST** /funnel/{funnel_id} | 
+[**getFunnel**](DefaultApi.md#getFunnel) | **GET** /funnel/{funnel_id} | 
 
 
-# **funnelCreate**
-> Funnel funnelCreate()
+# **getFunnel**
+> FunnelMetadataPublic getFunnel()
 
-create a new funnel
+Get funnel by id
 
 ### Example
 
@@ -20,26 +20,16 @@ import {  } from '';
 import * as fs from 'fs';
 
 const configuration = .createConfiguration();
-const apiInstance = new .FunnelApi(configuration);
+const apiInstance = new .DefaultApi(configuration);
 
-let body:.FunnelApiFunnelCreateRequest = {
+let body:.DefaultApiGetFunnelRequest = {
   // string | The funnel id
   funnelId: "funnel_id_example",
-  // FunnelCreateRequest (optional)
-  funnelCreateRequest: {
-    coverPhotoAssetId: "coverPhotoAssetId_example",
-    profilePhotoAssetId: "profilePhotoAssetId_example",
-    message: "message_example",
-    assetIds: [
-      "assetIds_example",
-    ],
-    expiry: 3.14,
-    name: "name_example",
-    completionMessage: "completionMessage_example",
-  },
+  // string | The payment session id (optional)
+  sessionId: "session_id_example",
 };
 
-apiInstance.funnelCreate(body).then((data:any) => {
+apiInstance.getFunnel(body).then((data:any) => {
   console.log('API called successfully. Returned data: ' + data);
 }).catch((error:any) => console.error(error));
 ```
@@ -49,31 +39,28 @@ apiInstance.funnelCreate(body).then((data:any) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **funnelCreateRequest** | **FunnelCreateRequest**|  |
  **funnelId** | [**string**] | The funnel id | defaults to undefined
+ **sessionId** | [**string**] | The payment session id | (optional) defaults to undefined
 
 
 ### Return type
 
-**Funnel**
+**FunnelMetadataPublic**
 
 ### Authorization
 
-[bearerAuth](README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**201** | Created |  -  |
-**400** | Bad Request |  -  |
-**404** | Not Found |  -  |
-**409** | Conflict |  -  |
+**200** | OK |  -  |
 
 [[Back to top]](#) [[Back to API list]](README.md#documentation-for-api-endpoints) [[Back to Model list]](README.md#documentation-for-models) [[Back to README]](README.md)
 

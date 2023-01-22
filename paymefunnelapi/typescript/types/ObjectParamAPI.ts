@@ -7,17 +7,61 @@ import { Funnel } from '../models/Funnel';
 import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
+import { FunnelMetadataPublic } from '../models/FunnelMetadataPublic';
 import { ModelError } from '../models/ModelError';
+import { PublicAssert } from '../models/PublicAssert';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 
+import { ObservableDefaultApi } from "./ObservableAPI";
+import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
+
+export interface DefaultApiGetFunnelRequest {
+    /**
+     * The funnel id
+     * @type string
+     * @memberof DefaultApigetFunnel
+     */
+    funnelId: string
+    /**
+     * The payment session id
+     * @type string
+     * @memberof DefaultApigetFunnel
+     */
+    sessionId?: string
+}
+
+export class ObjectDefaultApi {
+    private api: ObservableDefaultApi
+
+    public constructor(configuration: Configuration, requestFactory?: DefaultApiRequestFactory, responseProcessor?: DefaultApiResponseProcessor) {
+        this.api = new ObservableDefaultApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Get funnel by id
+     * 
+     * @param param the request object
+     */
+    public getFunnel(param: DefaultApiGetFunnelRequest, options?: Configuration): Promise<FunnelMetadataPublic> {
+        return this.api.getFunnel(param.funnelId, param.sessionId,  options).toPromise();
+    }
+
+}
+
 import { ObservableFunnelApi } from "./ObservableAPI";
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
 
 export interface FunnelApiFunnelCreateRequest {
+    /**
+     * The funnel id
+     * @type string
+     * @memberof FunnelApifunnelCreate
+     */
+    funnelId: string
     /**
      * 
      * @type FunnelCreateRequest
@@ -38,8 +82,8 @@ export class ObjectFunnelApi {
      * 
      * @param param the request object
      */
-    public funnelCreate(param: FunnelApiFunnelCreateRequest = {}, options?: Configuration): Promise<Funnel> {
-        return this.api.funnelCreate(param.funnelCreateRequest,  options).toPromise();
+    public funnelCreate(param: FunnelApiFunnelCreateRequest, options?: Configuration): Promise<Funnel> {
+        return this.api.funnelCreate(param.funnelId, param.funnelCreateRequest,  options).toPromise();
     }
 
 }

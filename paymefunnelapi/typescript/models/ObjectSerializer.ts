@@ -4,7 +4,9 @@ export * from '../models/Funnel';
 export * from '../models/FunnelCreate400Response';
 export * from '../models/FunnelCreateRequest';
 export * from '../models/FunnelMetadata';
+export * from '../models/FunnelMetadataPublic';
 export * from '../models/ModelError';
+export * from '../models/PublicAssert';
 export * from '../models/StripeAccount';
 export * from '../models/StripeIntegration';
 export * from '../models/StripeLinkedAccount';
@@ -17,7 +19,9 @@ import { Funnel    , FunnelTypeEnum   } from '../models/Funnel';
 import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
+import { FunnelMetadataPublic } from '../models/FunnelMetadataPublic';
 import { ModelError } from '../models/ModelError';
+import { PublicAssert } from '../models/PublicAssert';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
@@ -55,7 +59,9 @@ let typeMap: {[index: string]: any} = {
     "FunnelCreate400Response": FunnelCreate400Response,
     "FunnelCreateRequest": FunnelCreateRequest,
     "FunnelMetadata": FunnelMetadata,
+    "FunnelMetadataPublic": FunnelMetadataPublic,
     "ModelError": ModelError,
+    "PublicAssert": PublicAssert,
     "StripeAccount": StripeAccount,
     "StripeIntegration": StripeIntegration,
     "StripeLinkedAccount": StripeLinkedAccount,

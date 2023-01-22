@@ -7,12 +7,44 @@ import { Funnel } from '../models/Funnel';
 import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
+import { FunnelMetadataPublic } from '../models/FunnelMetadataPublic';
 import { ModelError } from '../models/ModelError';
+import { PublicAssert } from '../models/PublicAssert';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+import { ObservableDefaultApi } from './ObservableAPI';
+
+import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
+export class PromiseDefaultApi {
+    private api: ObservableDefaultApi
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: DefaultApiRequestFactory,
+        responseProcessor?: DefaultApiResponseProcessor
+    ) {
+        this.api = new ObservableDefaultApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Get funnel by id
+     * 
+     * @param funnelId The funnel id
+     * @param sessionId The payment session id
+     */
+    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Promise<FunnelMetadataPublic> {
+        const result = this.api.getFunnel(funnelId, sessionId, _options);
+        return result.toPromise();
+    }
+
+
+}
+
+
+
 import { ObservableFunnelApi } from './ObservableAPI';
 
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
@@ -30,10 +62,11 @@ export class PromiseFunnelApi {
     /**
      * create a new funnel
      * 
+     * @param funnelId The funnel id
      * @param funnelCreateRequest 
      */
-    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
-        const result = this.api.funnelCreate(funnelCreateRequest, _options);
+    public funnelCreate(funnelId: string, funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
+        const result = this.api.funnelCreate(funnelId, funnelCreateRequest, _options);
         return result.toPromise();
     }
 

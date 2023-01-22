@@ -8,12 +8,57 @@ import { Funnel } from '../models/Funnel';
 import { FunnelCreate400Response } from '../models/FunnelCreate400Response';
 import { FunnelCreateRequest } from '../models/FunnelCreateRequest';
 import { FunnelMetadata } from '../models/FunnelMetadata';
+import { FunnelMetadataPublic } from '../models/FunnelMetadataPublic';
 import { ModelError } from '../models/ModelError';
+import { PublicAssert } from '../models/PublicAssert';
 import { StripeAccount } from '../models/StripeAccount';
 import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+
+import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
+export class ObservableDefaultApi {
+    private requestFactory: DefaultApiRequestFactory;
+    private responseProcessor: DefaultApiResponseProcessor;
+    private configuration: Configuration;
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: DefaultApiRequestFactory,
+        responseProcessor?: DefaultApiResponseProcessor
+    ) {
+        this.configuration = configuration;
+        this.requestFactory = requestFactory || new DefaultApiRequestFactory(configuration);
+        this.responseProcessor = responseProcessor || new DefaultApiResponseProcessor();
+    }
+
+    /**
+     * Get funnel by id
+     * 
+     * @param funnelId The funnel id
+     * @param sessionId The payment session id
+     */
+    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Observable<FunnelMetadataPublic> {
+        const requestContextPromise = this.requestFactory.getFunnel(funnelId, sessionId, _options);
+
+        // build promise chain
+        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
+        for (let middleware of this.configuration.middleware) {
+            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
+        }
+
+        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
+            pipe(mergeMap((response: ResponseContext) => {
+                let middlewarePostObservable = of(response);
+                for (let middleware of this.configuration.middleware) {
+                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
+                }
+                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.getFunnel(rsp)));
+            }));
+    }
+
+}
 
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
 export class ObservableFunnelApi {
@@ -34,10 +79,11 @@ export class ObservableFunnelApi {
     /**
      * create a new funnel
      * 
+     * @param funnelId The funnel id
      * @param funnelCreateRequest 
      */
-    public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Observable<Funnel> {
-        const requestContextPromise = this.requestFactory.funnelCreate(funnelCreateRequest, _options);
+    public funnelCreate(funnelId: string, funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Observable<Funnel> {
+        const requestContextPromise = this.requestFactory.funnelCreate(funnelId, funnelCreateRequest, _options);
 
         // build promise chain
         let middlewarePreObservable = from<RequestContext>(requestContextPromise);

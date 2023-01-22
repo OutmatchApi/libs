@@ -1,8 +1,10 @@
 .gitignore
+DefaultApi.md
 FunnelApi.md
 README.md
 StatusApi.md
 UserApi.md
+apis/DefaultApi.ts
 apis/FunnelApi.ts
 apis/StatusApi.ts
 apis/UserApi.ts
@@ -21,8 +23,10 @@ models/Funnel.ts
 models/FunnelCreate400Response.ts
 models/FunnelCreateRequest.ts
 models/FunnelMetadata.ts
+models/FunnelMetadataPublic.ts
 models/ModelError.ts
 models/ObjectSerializer.ts
+models/PublicAssert.ts
 models/StripeAccount.ts
 models/StripeIntegration.ts
 models/StripeLinkedAccount.ts

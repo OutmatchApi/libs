@@ -10,17 +10,17 @@
  * Do not edit the class manually.
  */
 
-import { Asset } from '../models/Asset';
+import { PublicAssert } from '../models/PublicAssert';
 import { HttpFile } from '../http/http';
 
-export class FunnelMetadata {
-    'assets': Array<Asset>;
-    'profilePhoto': Asset;
-    'coverPhoto': Asset;
+export class FunnelMetadataPublic {
+    'assets': Array<PublicAssert>;
+    'profilePhoto': PublicAssert;
+    'coverPhoto': PublicAssert;
     'completionMessage': string;
     'welcomeMessage': string;
     'stripePaymentLink': string;
-    'previewAsset': Asset;
+    'previewAsset': PublicAssert;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -28,19 +28,19 @@ export class FunnelMetadata {
         {
             "name": "assets",
             "baseName": "assets",
-            "type": "Array<Asset>",
+            "type": "Array<PublicAssert>",
             "format": ""
         },
         {
             "name": "profilePhoto",
             "baseName": "profilePhoto",
-            "type": "Asset",
+            "type": "PublicAssert",
             "format": ""
         },
         {
             "name": "coverPhoto",
             "baseName": "coverPhoto",
-            "type": "Asset",
+            "type": "PublicAssert",
             "format": ""
         },
         {
@@ -64,12 +64,12 @@ export class FunnelMetadata {
         {
             "name": "previewAsset",
             "baseName": "previewAsset",
-            "type": "Asset",
+            "type": "PublicAssert",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return FunnelMetadata.attributeTypeMap;
+        return FunnelMetadataPublic.attributeTypeMap;
     }
 
     public constructor() {

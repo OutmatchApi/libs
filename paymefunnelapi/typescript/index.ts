@@ -8,5 +8,5 @@ export * from "./servers";
 export { RequiredError } from "./apis/baseapi";
 
 export { PromiseMiddleware as Middleware } from './middleware';
-export { FunnelApiFunnelCreateRequest, ObjectFunnelApi as FunnelApi,  StatusApiGetStatusRequest, ObjectStatusApi as StatusApi,  UserApiCreateUserRequest, UserApiUpdateUserRequest, UserApiUserConnectStripeRequest, ObjectUserApi as UserApi } from './types/ObjectParamAPI';
+export { DefaultApiGetFunnelRequest, ObjectDefaultApi as DefaultApi,  FunnelApiFunnelCreateRequest, ObjectFunnelApi as FunnelApi,  StatusApiGetStatusRequest, ObjectStatusApi as StatusApi,  UserApiCreateUserRequest, UserApiUpdateUserRequest, UserApiUserConnectStripeRequest, ObjectUserApi as UserApi } from './types/ObjectParamAPI';
 
