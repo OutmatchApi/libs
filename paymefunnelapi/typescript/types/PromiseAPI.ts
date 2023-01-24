@@ -15,36 +15,6 @@ import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
-import { ObservableDefaultApi } from './ObservableAPI';
-
-import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
-export class PromiseDefaultApi {
-    private api: ObservableDefaultApi
-
-    public constructor(
-        configuration: Configuration,
-        requestFactory?: DefaultApiRequestFactory,
-        responseProcessor?: DefaultApiResponseProcessor
-    ) {
-        this.api = new ObservableDefaultApi(configuration, requestFactory, responseProcessor);
-    }
-
-    /**
-     * Get funnel by id
-     * 
-     * @param funnelId the funnel id
-     * @param sessionId The payment session id
-     */
-    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Promise<FunnelMetadataPublic> {
-        const result = this.api.getFunnel(funnelId, sessionId, _options);
-        return result.toPromise();
-    }
-
-
-}
-
-
-
 import { ObservableFunnelApi } from './ObservableAPI';
 
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
@@ -66,6 +36,36 @@ export class PromiseFunnelApi {
      */
     public funnelCreate(funnelCreateRequest?: FunnelCreateRequest, _options?: Configuration): Promise<Funnel> {
         const result = this.api.funnelCreate(funnelCreateRequest, _options);
+        return result.toPromise();
+    }
+
+
+}
+
+
+
+import { ObservablePublicFunnelApi } from './ObservableAPI';
+
+import { PublicFunnelApiRequestFactory, PublicFunnelApiResponseProcessor} from "../apis/PublicFunnelApi";
+export class PromisePublicFunnelApi {
+    private api: ObservablePublicFunnelApi
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: PublicFunnelApiRequestFactory,
+        responseProcessor?: PublicFunnelApiResponseProcessor
+    ) {
+        this.api = new ObservablePublicFunnelApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Get funnel by id
+     * Publicly get funnel
+     * @param funnelId the funnel id
+     * @param sessionId The payment session id
+     */
+    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Promise<FunnelMetadataPublic> {
+        const result = this.api.getFunnel(funnelId, sessionId, _options);
         return result.toPromise();
     }
 

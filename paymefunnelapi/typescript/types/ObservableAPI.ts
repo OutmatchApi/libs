@@ -17,49 +17,6 @@ import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 
-import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
-export class ObservableDefaultApi {
-    private requestFactory: DefaultApiRequestFactory;
-    private responseProcessor: DefaultApiResponseProcessor;
-    private configuration: Configuration;
-
-    public constructor(
-        configuration: Configuration,
-        requestFactory?: DefaultApiRequestFactory,
-        responseProcessor?: DefaultApiResponseProcessor
-    ) {
-        this.configuration = configuration;
-        this.requestFactory = requestFactory || new DefaultApiRequestFactory(configuration);
-        this.responseProcessor = responseProcessor || new DefaultApiResponseProcessor();
-    }
-
-    /**
-     * Get funnel by id
-     * 
-     * @param funnelId the funnel id
-     * @param sessionId The payment session id
-     */
-    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Observable<FunnelMetadataPublic> {
-        const requestContextPromise = this.requestFactory.getFunnel(funnelId, sessionId, _options);
-
-        // build promise chain
-        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
-        for (let middleware of this.configuration.middleware) {
-            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
-        }
-
-        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
-            pipe(mergeMap((response: ResponseContext) => {
-                let middlewarePostObservable = of(response);
-                for (let middleware of this.configuration.middleware) {
-                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
-                }
-                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.getFunnel(rsp)));
-            }));
-    }
-
-}
-
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
 export class ObservableFunnelApi {
     private requestFactory: FunnelApiRequestFactory;
@@ -97,6 +54,49 @@ export class ObservableFunnelApi {
                     middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
                 }
                 return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.funnelCreate(rsp)));
+            }));
+    }
+
+}
+
+import { PublicFunnelApiRequestFactory, PublicFunnelApiResponseProcessor} from "../apis/PublicFunnelApi";
+export class ObservablePublicFunnelApi {
+    private requestFactory: PublicFunnelApiRequestFactory;
+    private responseProcessor: PublicFunnelApiResponseProcessor;
+    private configuration: Configuration;
+
+    public constructor(
+        configuration: Configuration,
+        requestFactory?: PublicFunnelApiRequestFactory,
+        responseProcessor?: PublicFunnelApiResponseProcessor
+    ) {
+        this.configuration = configuration;
+        this.requestFactory = requestFactory || new PublicFunnelApiRequestFactory(configuration);
+        this.responseProcessor = responseProcessor || new PublicFunnelApiResponseProcessor();
+    }
+
+    /**
+     * Get funnel by id
+     * Publicly get funnel
+     * @param funnelId the funnel id
+     * @param sessionId The payment session id
+     */
+    public getFunnel(funnelId: string, sessionId?: string, _options?: Configuration): Observable<FunnelMetadataPublic> {
+        const requestContextPromise = this.requestFactory.getFunnel(funnelId, sessionId, _options);
+
+        // build promise chain
+        let middlewarePreObservable = from<RequestContext>(requestContextPromise);
+        for (let middleware of this.configuration.middleware) {
+            middlewarePreObservable = middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => middleware.pre(ctx)));
+        }
+
+        return middlewarePreObservable.pipe(mergeMap((ctx: RequestContext) => this.configuration.httpApi.send(ctx))).
+            pipe(mergeMap((response: ResponseContext) => {
+                let middlewarePostObservable = of(response);
+                for (let middleware of this.configuration.middleware) {
+                    middlewarePostObservable = middlewarePostObservable.pipe(mergeMap((rsp: ResponseContext) => middleware.post(rsp)));
+                }
+                return middlewarePostObservable.pipe(map((rsp: ResponseContext) => this.responseProcessor.getFunnel(rsp)));
             }));
     }
 

@@ -1,11 +1,11 @@
 .gitignore
-DefaultApi.md
 FunnelApi.md
+PublicFunnelApi.md
 README.md
 StatusApi.md
 UserApi.md
-apis/DefaultApi.ts
 apis/FunnelApi.ts
+apis/PublicFunnelApi.ts
 apis/StatusApi.ts
 apis/UserApi.ts
 apis/baseapi.ts

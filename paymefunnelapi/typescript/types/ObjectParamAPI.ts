@@ -16,42 +16,6 @@ import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
 
-import { ObservableDefaultApi } from "./ObservableAPI";
-import { DefaultApiRequestFactory, DefaultApiResponseProcessor} from "../apis/DefaultApi";
-
-export interface DefaultApiGetFunnelRequest {
-    /**
-     * the funnel id
-     * @type string
-     * @memberof DefaultApigetFunnel
-     */
-    funnelId: string
-    /**
-     * The payment session id
-     * @type string
-     * @memberof DefaultApigetFunnel
-     */
-    sessionId?: string
-}
-
-export class ObjectDefaultApi {
-    private api: ObservableDefaultApi
-
-    public constructor(configuration: Configuration, requestFactory?: DefaultApiRequestFactory, responseProcessor?: DefaultApiResponseProcessor) {
-        this.api = new ObservableDefaultApi(configuration, requestFactory, responseProcessor);
-    }
-
-    /**
-     * Get funnel by id
-     * 
-     * @param param the request object
-     */
-    public getFunnel(param: DefaultApiGetFunnelRequest, options?: Configuration): Promise<FunnelMetadataPublic> {
-        return this.api.getFunnel(param.funnelId, param.sessionId,  options).toPromise();
-    }
-
-}
-
 import { ObservableFunnelApi } from "./ObservableAPI";
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
 
@@ -78,6 +42,42 @@ export class ObjectFunnelApi {
      */
     public funnelCreate(param: FunnelApiFunnelCreateRequest = {}, options?: Configuration): Promise<Funnel> {
         return this.api.funnelCreate(param.funnelCreateRequest,  options).toPromise();
+    }
+
+}
+
+import { ObservablePublicFunnelApi } from "./ObservableAPI";
+import { PublicFunnelApiRequestFactory, PublicFunnelApiResponseProcessor} from "../apis/PublicFunnelApi";
+
+export interface PublicFunnelApiGetFunnelRequest {
+    /**
+     * the funnel id
+     * @type string
+     * @memberof PublicFunnelApigetFunnel
+     */
+    funnelId: string
+    /**
+     * The payment session id
+     * @type string
+     * @memberof PublicFunnelApigetFunnel
+     */
+    sessionId?: string
+}
+
+export class ObjectPublicFunnelApi {
+    private api: ObservablePublicFunnelApi
+
+    public constructor(configuration: Configuration, requestFactory?: PublicFunnelApiRequestFactory, responseProcessor?: PublicFunnelApiResponseProcessor) {
+        this.api = new ObservablePublicFunnelApi(configuration, requestFactory, responseProcessor);
+    }
+
+    /**
+     * Get funnel by id
+     * Publicly get funnel
+     * @param param the request object
+     */
+    public getFunnel(param: PublicFunnelApiGetFunnelRequest, options?: Configuration): Promise<FunnelMetadataPublic> {
+        return this.api.getFunnel(param.funnelId, param.sessionId,  options).toPromise();
     }
 
 }
