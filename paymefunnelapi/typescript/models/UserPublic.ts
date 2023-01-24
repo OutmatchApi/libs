@@ -12,41 +12,14 @@
 
 import { HttpFile } from '../http/http';
 
-export class User {
-    'id': string;
-    'email': string;
-    'firstName': string;
-    'lastName': string;
+export class UserPublic {
     'instagram'?: string;
     'tiktok'?: string;
+    'publicName'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
-        {
-            "name": "id",
-            "baseName": "id",
-            "type": "string",
-            "format": "string"
-        },
-        {
-            "name": "email",
-            "baseName": "email",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "firstName",
-            "baseName": "firstName",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "lastName",
-            "baseName": "lastName",
-            "type": "string",
-            "format": ""
-        },
         {
             "name": "instagram",
             "baseName": "instagram",
@@ -58,10 +31,16 @@ export class User {
             "baseName": "tiktok",
             "type": "string",
             "format": ""
+        },
+        {
+            "name": "publicName",
+            "baseName": "publicName",
+            "type": "string",
+            "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return User.attributeTypeMap;
+        return UserPublic.attributeTypeMap;
     }
 
     public constructor() {

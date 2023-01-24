@@ -12,6 +12,7 @@ export * from '../models/StripeIntegration';
 export * from '../models/StripeLinkedAccount';
 export * from '../models/UpdateUserRequest';
 export * from '../models/User';
+export * from '../models/UserPublic';
 
 import { Asset   , AssetTypeEnum      } from '../models/Asset';
 import { CreateUserRequest } from '../models/CreateUserRequest';
@@ -27,6 +28,7 @@ import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+import { UserPublic } from '../models/UserPublic';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -67,6 +69,7 @@ let typeMap: {[index: string]: any} = {
     "StripeLinkedAccount": StripeLinkedAccount,
     "UpdateUserRequest": UpdateUserRequest,
     "User": User,
+    "UserPublic": UserPublic,
 }
 
 export class ObjectSerializer {

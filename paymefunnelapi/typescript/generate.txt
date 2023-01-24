@@ -32,63 +32,69 @@
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/Asset.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/CreateUserRequest.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/Funnel.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/FunnelCreate400Response.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/FunnelCreateRequest.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/FunnelMetadata.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/FunnelMetadataPublic.ts
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/Asset.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/CreateUserRequest.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/Funnel.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/FunnelCreate400Response.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/FunnelCreateRequest.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/FunnelMetadata.ts
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/FunnelMetadataPublic.ts
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/ModelError.ts
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/ModelError.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/PublicAsset.ts
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/PublicAsset.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/StripeAccount.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/StripeIntegration.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/StripeLinkedAccount.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/UpdateUserRequest.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/User.ts
-[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
-[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/StripeAccount.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/StripeIntegration.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/StripeLinkedAccount.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/UpdateUserRequest.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/User.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/UserPublic.ts
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
 [main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/FunnelApi.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/FunnelApi.md
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/PublicFunnelApi.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/PublicFunnelApi.md
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/StatusApi.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/StatusApi.md
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/UserApi.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/UserApi.md
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/.gitignore
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/git_push.sh
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/util.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/exception.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/http/http.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/servers.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/configuration.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/auth/auth.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/all.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/types/PromiseAPI.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/types/ObservableAPI.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/types/ObjectParamAPI.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/models/ObjectSerializer.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/middleware.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/apis/baseapi.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/index.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/http/isomorphic-fetch.ts
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/README.md
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/package.json
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/tsconfig.json
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/rxjsStub.ts
-[main] INFO  o.o.codegen.TemplateManager - Skipped /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/.openapi-generator/VERSION
-[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-d1ce3e22-7c39-4c86-b499-b07262f8d73ceYpxLP/paymefunnelapi/typescript/.openapi-generator/FILES
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] WARN  o.o.c.l.TypeScriptClientCodegen - Error (model name matches existing language type) cannot be used as a model name. Renamed to ModelError
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/FunnelApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/FunnelApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/PublicFunnelApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/PublicFunnelApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/StatusApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/StatusApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/UserApi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/UserApi.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/.gitignore
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/git_push.sh
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/util.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/exception.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/http/http.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/servers.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/configuration.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/auth/auth.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/all.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/types/PromiseAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/types/ObservableAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/types/ObjectParamAPI.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/models/ObjectSerializer.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/middleware.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/apis/baseapi.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/index.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/http/isomorphic-fetch.ts
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/README.md
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/package.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/tsconfig.json
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/rxjsStub.ts
+[main] INFO  o.o.codegen.TemplateManager - Skipped /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/.openapi-generator-ignore (Skipped by supportingFiles options supplied by user.)
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/.openapi-generator/VERSION
+[main] INFO  o.o.codegen.TemplateManager - writing file /tmp/generatedCode-c0cc66a1-faf2-4c1b-aa5d-c8de124fb01bviHjy3/paymefunnelapi/typescript/.openapi-generator/FILES
 ################################################################################
 # Thanks for using OpenAPI Generator.                                          #
 # Please consider donation to help us maintain this project ?                 #

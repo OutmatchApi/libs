@@ -1,13 +1,13 @@
-## @apilibraries/paymefunnelapi@0.0.58
+## @apilibraries/paymefunnelapi@0.0.59
 
 ### Install
 
 ```
-npm install @apilibraries/paymefunnelapi@0.0.58 --save
+npm install @apilibraries/paymefunnelapi@0.0.59 --save
 
 // Or with yarn
 
-yarn add @apilibraries/paymefunnelapi@0.0.58
+yarn add @apilibraries/paymefunnelapi@0.0.59
 
 ```
 

@@ -32,6 +32,7 @@ models/StripeIntegration.ts
 models/StripeLinkedAccount.ts
 models/UpdateUserRequest.ts
 models/User.ts
+models/UserPublic.ts
 models/all.ts
 package.json
 rxjsStub.ts

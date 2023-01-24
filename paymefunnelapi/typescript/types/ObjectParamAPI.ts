@@ -15,6 +15,7 @@ import { StripeIntegration } from '../models/StripeIntegration';
 import { StripeLinkedAccount } from '../models/StripeLinkedAccount';
 import { UpdateUserRequest } from '../models/UpdateUserRequest';
 import { User } from '../models/User';
+import { UserPublic } from '../models/UserPublic';
 
 import { ObservableFunnelApi } from "./ObservableAPI";
 import { FunnelApiRequestFactory, FunnelApiResponseProcessor} from "../apis/FunnelApi";
